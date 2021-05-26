@@ -82,12 +82,12 @@ $EndComp
 $Comp
 L Connector:Conn_01x01_Male J3
 U 1 1 60ACC117
-P 5450 2600
-F 0 "J3" H 5422 2532 50  0000 R CNN
-F 1 "rx" H 5422 2623 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 5450 2600 50  0001 C CNN
-F 3 "~" H 5450 2600 50  0001 C CNN
-	1    5450 2600
+P 5650 2900
+F 0 "J3" H 5622 2832 50  0000 R CNN
+F 1 "rx" H 5622 2923 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 5650 2900 50  0001 C CNN
+F 3 "~" H 5650 2900 50  0001 C CNN
+	1    5650 2900
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -124,17 +124,6 @@ F 3 "~" H 4900 3300 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Connector:Conn_01x05_Male J1
-U 1 1 60ACE4A7
-P 1000 2550
-F 0 "J1" H 1108 2931 50  0000 C CNN
-F 1 "Conn_01x05_Male" H 1108 2840 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 1000 2550 50  0001 C CNN
-F 3 "~" H 1000 2550 50  0001 C CNN
-	1    1000 2550
-	1    0    0    -1  
-$EndComp
-$Comp
 L Amplifier_Operational:AD8603 U1
 U 1 1 60ACF53E
 P 4050 2300
@@ -165,16 +154,11 @@ F 3 "" H 1650 3150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1200 2650 1200 2750
-Wire Wire Line
 	1200 3150 1650 3150
 Wire Wire Line
 	3350 3150 3350 3000
 Wire Wire Line
 	2550 3150 2700 3150
-Connection ~ 1200 2750
-Wire Wire Line
-	1200 2750 1200 3150
 Connection ~ 1650 3150
 Wire Wire Line
 	1650 3150 1950 3150
@@ -188,11 +172,6 @@ Wire Wire Line
 Connection ~ 1950 2700
 Wire Wire Line
 	1950 2700 1300 2700
-Wire Wire Line
-	1300 2450 1200 2450
-Wire Wire Line
-	1200 2550 1200 2450
-Connection ~ 1200 2450
 Connection ~ 3350 3000
 Wire Wire Line
 	3950 2600 3950 3150
@@ -234,7 +213,7 @@ L Connector:Conn_01x01_Male J8
 U 1 1 60ADFBCD
 P 4950 2500
 F 0 "J8" H 5058 2681 50  0000 C CNN
-F 1 "tx" H 5058 2590 50  0000 C CNN
+F 1 "tx2" H 5058 2590 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 4950 2500 50  0001 C CNN
 F 3 "~" H 4950 2500 50  0001 C CNN
 	1    4950 2500
@@ -243,18 +222,18 @@ $EndComp
 $Comp
 L Connector:Conn_01x01_Male J9
 U 1 1 60AE0110
-P 4950 2600
-F 0 "J9" H 5058 2781 50  0000 C CNN
-F 1 "tx" H 5058 2690 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 4950 2600 50  0001 C CNN
-F 3 "~" H 4950 2600 50  0001 C CNN
-	1    4950 2600
+P 5150 2900
+F 0 "J9" H 5258 3081 50  0000 C CNN
+F 1 "rx2" H 5258 2990 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 5150 2900 50  0001 C CNN
+F 3 "~" H 5150 2900 50  0001 C CNN
+	1    5150 2900
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	5150 2500 5200 2500
 Wire Wire Line
-	5250 2600 5200 2600
+	5450 2900 5400 2900
 Wire Wire Line
 	1950 2700 2400 2700
 Wire Wire Line
@@ -348,17 +327,17 @@ Wire Wire Line
 $Comp
 L Connector:TestPoint TP6
 U 1 1 60AE5045
-P 5200 2600
-F 0 "TP6" H 5142 2626 50  0000 R CNN
-F 1 "TestPoint" H 5142 2717 50  0000 R CNN
-F 2 "TestPoint:TestPoint_Pad_D3.0mm" H 5400 2600 50  0001 C CNN
-F 3 "~" H 5400 2600 50  0001 C CNN
-	1    5200 2600
+P 5400 2900
+F 0 "TP6" H 5342 2926 50  0000 R CNN
+F 1 "TestPoint" H 5342 3017 50  0000 R CNN
+F 2 "TestPoint:TestPoint_Pad_D3.0mm" H 5600 2900 50  0001 C CNN
+F 3 "~" H 5600 2900 50  0001 C CNN
+	1    5400 2900
 	-1   0    0    1   
 $EndComp
-Connection ~ 5200 2600
+Connection ~ 5400 2900
 Wire Wire Line
-	5200 2600 5150 2600
+	5400 2900 5350 2900
 Wire Wire Line
 	4350 2300 4350 2800
 Wire Wire Line
@@ -374,4 +353,19 @@ Wire Wire Line
 Connection ~ 3750 2600
 Wire Wire Line
 	3750 2600 3750 2400
+$Comp
+L Connector:Conn_01x03_Male J1
+U 1 1 60B03AF6
+P 1000 2450
+F 0 "J1" H 1108 2731 50  0000 C CNN
+F 1 "Conn_01x03_Male" H 1108 2640 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 1000 2450 50  0001 C CNN
+F 3 "~" H 1000 2450 50  0001 C CNN
+	1    1000 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1200 2550 1200 3150
+Wire Wire Line
+	1200 2450 1300 2450
 $EndSCHEMATC
