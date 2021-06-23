@@ -1,0 +1,663 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A3 16535 11693
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Relay:AZ850-x K?
+U 1 1 60D1BE56
+P 3700 1750
+F 0 "K?" V 2933 1750 50  0000 C CNN
+F 1 "AZ850-x" V 3024 1750 50  0000 C CNN
+F 2 "Relay_THT:Relay_DPDT_FRT5" H 4250 1800 50  0001 C CNN
+F 3 "http://www.azettler.com/pdfs/az850.pdf" H 3700 1750 50  0001 C CNN
+	1    3700 1750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D D?
+U 1 1 60D1DBDC
+P 3700 950
+F 0 "D?" H 3700 733 50  0000 C CNN
+F 1 "D" H 3700 824 50  0000 C CNN
+F 2 "" H 3700 950 50  0001 C CNN
+F 3 "~" H 3700 950 50  0001 C CNN
+	1    3700 950 
+	-1   0    0    1   
+$EndComp
+Text Label 4000 800  0    50   ~ 0
+pincontrol
+Wire Wire Line
+	4000 800  4000 950 
+Wire Wire Line
+	2150 1350 3200 1350
+Wire Wire Line
+	3550 950  3200 950 
+Wire Wire Line
+	3200 950  3200 1350
+Connection ~ 3200 1350
+Wire Wire Line
+	3200 1350 3400 1350
+$Comp
+L Device:R R?
+U 1 1 60D1F8D5
+P 4500 1900
+F 0 "R?" H 4570 1946 50  0000 L CNN
+F 1 "R" H 4570 1855 50  0000 L CNN
+F 2 "" V 4430 1900 50  0001 C CNN
+F 3 "~" H 4500 1900 50  0001 C CNN
+	1    4500 1900
+	1    0    0    -1  
+$EndComp
+Text Label 1700 1700 0    50   ~ 0
+L1
+Text Label 1700 1950 0    50   ~ 0
+L2
+Wire Wire Line
+	1700 1700 3400 1700
+Wire Wire Line
+	3400 1700 3400 1750
+Wire Wire Line
+	1700 1950 3400 1950
+Wire Wire Line
+	3400 1950 3400 2150
+Wire Wire Line
+	4000 1850 4350 1850
+Wire Wire Line
+	4350 1850 4350 1750
+Wire Wire Line
+	4350 1750 4500 1750
+Wire Wire Line
+	4500 2050 4500 2250
+Wire Wire Line
+	4500 2250 4000 2250
+Wire Wire Line
+	3850 950  4000 950 
+Connection ~ 4000 950 
+Wire Wire Line
+	4000 950  4000 1350
+$Comp
+L pspice:0 #GND?
+U 1 1 60D213EA
+P 2150 1350
+F 0 "#GND?" H 2150 1250 50  0001 C CNN
+F 1 "0" H 2150 1439 50  0000 C CNN
+F 2 "" H 2150 1350 50  0001 C CNN
+F 3 "~" H 2150 1350 50  0001 C CNN
+	1    2150 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Relay:AZ850-x K?
+U 1 1 60D277D4
+P 7450 1900
+F 0 "K?" V 6683 1900 50  0000 C CNN
+F 1 "AZ850-x" V 6774 1900 50  0000 C CNN
+F 2 "Relay_THT:Relay_DPDT_FRT5" H 8000 1950 50  0001 C CNN
+F 3 "http://www.azettler.com/pdfs/az850.pdf" H 7450 1900 50  0001 C CNN
+	1    7450 1900
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D D?
+U 1 1 60D277DA
+P 7450 1100
+F 0 "D?" H 7450 883 50  0000 C CNN
+F 1 "D" H 7450 974 50  0000 C CNN
+F 2 "" H 7450 1100 50  0001 C CNN
+F 3 "~" H 7450 1100 50  0001 C CNN
+	1    7450 1100
+	-1   0    0    1   
+$EndComp
+Text Label 8100 850  0    50   ~ 0
+pincontrol
+Wire Wire Line
+	7750 950  7750 1100
+Wire Wire Line
+	5900 1500 6950 1500
+Wire Wire Line
+	7300 1100 6950 1100
+Wire Wire Line
+	6950 1100 6950 1500
+Connection ~ 6950 1500
+Wire Wire Line
+	6950 1500 7150 1500
+$Comp
+L Device:R R?
+U 1 1 60D277E7
+P 8250 2050
+F 0 "R?" H 8320 2096 50  0000 L CNN
+F 1 "R" H 8320 2005 50  0000 L CNN
+F 2 "" V 8180 2050 50  0001 C CNN
+F 3 "~" H 8250 2050 50  0001 C CNN
+	1    8250 2050
+	1    0    0    -1  
+$EndComp
+Text Label 5450 1850 0    50   ~ 0
+L1
+Text Label 5450 2100 0    50   ~ 0
+L2
+Wire Wire Line
+	5450 1850 7150 1850
+Wire Wire Line
+	7150 1850 7150 1900
+Wire Wire Line
+	5450 2100 7150 2100
+Wire Wire Line
+	7150 2100 7150 2300
+Wire Wire Line
+	7750 2000 8100 2000
+Wire Wire Line
+	8100 2000 8100 1900
+Wire Wire Line
+	8100 1900 8250 1900
+Wire Wire Line
+	8250 2200 8250 2400
+Wire Wire Line
+	8250 2400 7750 2400
+Wire Wire Line
+	7600 1100 7750 1100
+Connection ~ 7750 1100
+Wire Wire Line
+	7750 1100 7750 1500
+$Comp
+L pspice:0 #GND?
+U 1 1 60D277FB
+P 5900 1500
+F 0 "#GND?" H 5900 1400 50  0001 C CNN
+F 1 "0" H 5900 1589 50  0000 C CNN
+F 2 "" H 5900 1500 50  0001 C CNN
+F 3 "~" H 5900 1500 50  0001 C CNN
+	1    5900 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:MNMOS M?
+U 1 1 60D2AACE
+P 7850 750
+F 0 "M?" H 8137 796 50  0000 L CNN
+F 1 "MNMOS" H 8137 705 50  0000 L CNN
+F 2 "" H 7825 750 50  0001 C CNN
+F 3 "~" H 7825 750 50  0001 C CNN
+	1    7850 750 
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7650 950  7750 950 
+Connection ~ 7750 950 
+Wire Wire Line
+	8050 750  8050 850 
+Wire Wire Line
+	8050 850  8100 850 
+Text Label 8100 550  0    50   ~ 0
++12v
+Wire Wire Line
+	8100 550  7750 550 
+Text Label 9350 1150 0    50   ~ 0
++12v
+$Comp
+L Device:Battery_Cell BT?
+U 1 1 60D30C3A
+P 9850 1400
+F 0 "BT?" H 9968 1496 50  0000 L CNN
+F 1 "Battery_Cell" H 9968 1405 50  0000 L CNN
+F 2 "" V 9850 1460 50  0001 C CNN
+F 3 "~" V 9850 1460 50  0001 C CNN
+	1    9850 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Battery_Cell BT?
+U 1 1 60D3181D
+P 9850 1800
+F 0 "BT?" H 9968 1896 50  0000 L CNN
+F 1 "Battery_Cell" H 9968 1805 50  0000 L CNN
+F 2 "" V 9850 1860 50  0001 C CNN
+F 3 "~" V 9850 1860 50  0001 C CNN
+	1    9850 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Battery_Cell BT?
+U 1 1 60D3221A
+P 9850 2200
+F 0 "BT?" H 9968 2296 50  0000 L CNN
+F 1 "Battery_Cell" H 9968 2205 50  0000 L CNN
+F 2 "" V 9850 2260 50  0001 C CNN
+F 3 "~" V 9850 2260 50  0001 C CNN
+	1    9850 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9850 2000 9850 1950
+Wire Wire Line
+	9850 1150 9350 1150
+Wire Wire Line
+	9850 1200 9850 1150
+Wire Wire Line
+	9850 1600 9850 1550
+$Comp
+L pspice:0 #GND?
+U 1 1 60D3358C
+P 9350 2300
+F 0 "#GND?" H 9350 2200 50  0001 C CNN
+F 1 "0" H 9350 2389 50  0000 C CNN
+F 2 "" H 9350 2300 50  0001 C CNN
+F 3 "~" H 9350 2300 50  0001 C CNN
+	1    9350 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9350 2300 9850 2300
+$Comp
+L Device:Solar_Cell SC?
+U 1 1 60D34A1D
+P 14650 2200
+F 0 "SC?" H 14758 2296 50  0000 L CNN
+F 1 "Solar_Cell" H 14758 2205 50  0000 L CNN
+F 2 "" V 14650 2260 50  0001 C CNN
+F 3 "~" V 14650 2260 50  0001 C CNN
+	1    14650 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_NMOS_GSD Q?
+U 1 1 60D37B7E
+P 11400 1950
+F 0 "Q?" V 11649 1950 50  0000 C CNN
+F 1 "Q_NMOS_GSD" V 11740 1950 50  0000 C CNN
+F 2 "" H 11600 2050 50  0001 C CNN
+F 3 "~" H 11400 1950 50  0001 C CNN
+	1    11400 1950
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Q_NMOS_GSD Q?
+U 1 1 60D3A5BF
+P 11900 1950
+F 0 "Q?" V 12149 1950 50  0000 C CNN
+F 1 "Q_NMOS_GSD" V 12240 1950 50  0000 C CNN
+F 2 "" H 12100 2050 50  0001 C CNN
+F 3 "~" H 11900 1950 50  0001 C CNN
+	1    11900 1950
+	0    -1   1    0   
+$EndComp
+$Comp
+L Battery_Management:BQ297xy U?
+U 1 1 60D3C772
+P 12300 1500
+F 0 "U?" H 12300 1867 50  0000 C CNN
+F 1 "BQ297xy" H 12300 1776 50  0000 C CNN
+F 2 "Package_SON:WSON-6_1.5x1.5mm_P0.5mm" H 12300 1850 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/bq2970.pdf" H 12050 1700 50  0001 C CNN
+	1    12300 1500
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	11900 1600 11900 1750
+Wire Wire Line
+	11900 1400 11400 1400
+Wire Wire Line
+	11400 1400 11400 1750
+Wire Wire Line
+	11200 2050 11600 2050
+Wire Wire Line
+	12300 2050 12300 1800
+Connection ~ 11600 2050
+Wire Wire Line
+	11600 2050 11700 2050
+Connection ~ 11700 2050
+Wire Wire Line
+	11700 2050 12100 2050
+Connection ~ 12100 2050
+Wire Wire Line
+	12100 2050 12300 2050
+$Comp
+L Device:R R?
+U 1 1 60D40F6E
+P 12700 1850
+F 0 "R?" H 12770 1896 50  0000 L CNN
+F 1 "2.2k" H 12770 1805 50  0000 L CNN
+F 2 "" V 12630 1850 50  0001 C CNN
+F 3 "~" H 12700 1850 50  0001 C CNN
+	1    12700 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12700 1600 12700 1700
+Wire Wire Line
+	12700 2050 12300 2050
+Wire Wire Line
+	12700 2000 12700 2050
+Connection ~ 12300 2050
+$Comp
+L Device:R R?
+U 1 1 60D42A98
+P 13050 1200
+F 0 "R?" H 13120 1246 50  0000 L CNN
+F 1 "330" H 13120 1155 50  0000 L CNN
+F 2 "" V 12980 1200 50  0001 C CNN
+F 3 "~" H 13050 1200 50  0001 C CNN
+	1    13050 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 60D4460E
+P 13050 1750
+F 0 "C?" H 13142 1796 50  0000 L CNN
+F 1 "0.1u" H 13142 1705 50  0000 L CNN
+F 2 "" H 13050 1750 50  0001 C CNN
+F 3 "~" H 13050 1750 50  0001 C CNN
+	1    13050 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12700 1400 13050 1400
+Wire Wire Line
+	13050 2050 12700 2050
+Wire Wire Line
+	13050 1350 13050 1400
+Wire Wire Line
+	13050 1850 13050 2050
+Connection ~ 13050 1400
+Wire Wire Line
+	13050 1400 13050 1650
+Connection ~ 12700 2050
+$Comp
+L Device:Q_NMOS_GSD Q?
+U 1 1 60D51691
+P 11400 3300
+F 0 "Q?" V 11649 3300 50  0000 C CNN
+F 1 "Q_NMOS_GSD" V 11740 3300 50  0000 C CNN
+F 2 "" H 11600 3400 50  0001 C CNN
+F 3 "~" H 11400 3300 50  0001 C CNN
+	1    11400 3300
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Q_NMOS_GSD Q?
+U 1 1 60D51697
+P 11900 3300
+F 0 "Q?" V 12149 3300 50  0000 C CNN
+F 1 "Q_NMOS_GSD" V 12240 3300 50  0000 C CNN
+F 2 "" H 12100 3400 50  0001 C CNN
+F 3 "~" H 11900 3300 50  0001 C CNN
+	1    11900 3300
+	0    -1   1    0   
+$EndComp
+$Comp
+L Battery_Management:BQ297xy U?
+U 1 1 60D5169D
+P 12300 2850
+F 0 "U?" H 12300 3217 50  0000 C CNN
+F 1 "BQ297xy" H 12300 3126 50  0000 C CNN
+F 2 "Package_SON:WSON-6_1.5x1.5mm_P0.5mm" H 12300 3200 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/bq2970.pdf" H 12050 3050 50  0001 C CNN
+	1    12300 2850
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	11900 2950 11900 3100
+Wire Wire Line
+	11900 2750 11400 2750
+Wire Wire Line
+	11400 2750 11400 3100
+Wire Wire Line
+	11200 3400 11600 3400
+Wire Wire Line
+	12300 3400 12300 3150
+Connection ~ 11600 3400
+Wire Wire Line
+	11600 3400 11700 3400
+Connection ~ 11700 3400
+Wire Wire Line
+	11700 3400 12100 3400
+Connection ~ 12100 3400
+Wire Wire Line
+	12100 3400 12300 3400
+$Comp
+L Device:R R?
+U 1 1 60D516AE
+P 12700 3200
+F 0 "R?" H 12770 3246 50  0000 L CNN
+F 1 "2.2k" H 12770 3155 50  0000 L CNN
+F 2 "" V 12630 3200 50  0001 C CNN
+F 3 "~" H 12700 3200 50  0001 C CNN
+	1    12700 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12700 2950 12700 3050
+Wire Wire Line
+	12700 3400 12300 3400
+Wire Wire Line
+	12700 3350 12700 3400
+Connection ~ 12300 3400
+$Comp
+L Device:R R?
+U 1 1 60D516B8
+P 13050 2550
+F 0 "R?" H 13120 2596 50  0000 L CNN
+F 1 "330" H 13120 2505 50  0000 L CNN
+F 2 "" V 12980 2550 50  0001 C CNN
+F 3 "~" H 13050 2550 50  0001 C CNN
+	1    13050 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 60D516BE
+P 13050 3100
+F 0 "C?" H 13142 3146 50  0000 L CNN
+F 1 "0.1u" H 13142 3055 50  0000 L CNN
+F 2 "" H 13050 3100 50  0001 C CNN
+F 3 "~" H 13050 3100 50  0001 C CNN
+	1    13050 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12700 2750 13050 2750
+Wire Wire Line
+	13050 3400 12700 3400
+Wire Wire Line
+	13050 2700 13050 2750
+Wire Wire Line
+	13050 3200 13050 3400
+Connection ~ 13050 2750
+Wire Wire Line
+	13050 2750 13050 3000
+Connection ~ 12700 3400
+$Comp
+L Device:Q_NMOS_GSD Q?
+U 1 1 60D53321
+P 11400 4600
+F 0 "Q?" V 11649 4600 50  0000 C CNN
+F 1 "Q_NMOS_GSD" V 11740 4600 50  0000 C CNN
+F 2 "" H 11600 4700 50  0001 C CNN
+F 3 "~" H 11400 4600 50  0001 C CNN
+	1    11400 4600
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Q_NMOS_GSD Q?
+U 1 1 60D53327
+P 11900 4600
+F 0 "Q?" V 12149 4600 50  0000 C CNN
+F 1 "Q_NMOS_GSD" V 12240 4600 50  0000 C CNN
+F 2 "" H 12100 4700 50  0001 C CNN
+F 3 "~" H 11900 4600 50  0001 C CNN
+	1    11900 4600
+	0    -1   1    0   
+$EndComp
+$Comp
+L Battery_Management:BQ297xy U?
+U 1 1 60D5332D
+P 12300 4150
+F 0 "U?" H 12300 4517 50  0000 C CNN
+F 1 "BQ297xy" H 12300 4426 50  0000 C CNN
+F 2 "Package_SON:WSON-6_1.5x1.5mm_P0.5mm" H 12300 4500 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/bq2970.pdf" H 12050 4350 50  0001 C CNN
+	1    12300 4150
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	11900 4250 11900 4400
+Wire Wire Line
+	11900 4050 11400 4050
+Wire Wire Line
+	11400 4050 11400 4400
+Wire Wire Line
+	11200 4700 11600 4700
+Wire Wire Line
+	12300 4700 12300 4450
+Connection ~ 11600 4700
+Wire Wire Line
+	11600 4700 11700 4700
+Connection ~ 11700 4700
+Wire Wire Line
+	11700 4700 12100 4700
+Connection ~ 12100 4700
+Wire Wire Line
+	12100 4700 12300 4700
+$Comp
+L Device:R R?
+U 1 1 60D5333E
+P 12700 4500
+F 0 "R?" H 12770 4546 50  0000 L CNN
+F 1 "2.2k" H 12770 4455 50  0000 L CNN
+F 2 "" V 12630 4500 50  0001 C CNN
+F 3 "~" H 12700 4500 50  0001 C CNN
+	1    12700 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12700 4250 12700 4350
+Wire Wire Line
+	12700 4700 12300 4700
+Wire Wire Line
+	12700 4650 12700 4700
+Connection ~ 12300 4700
+$Comp
+L Device:R R?
+U 1 1 60D53348
+P 13050 3850
+F 0 "R?" H 13120 3896 50  0000 L CNN
+F 1 "330" H 13120 3805 50  0000 L CNN
+F 2 "" V 12980 3850 50  0001 C CNN
+F 3 "~" H 13050 3850 50  0001 C CNN
+	1    13050 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 60D5334E
+P 13050 4400
+F 0 "C?" H 13142 4446 50  0000 L CNN
+F 1 "0.1u" H 13142 4355 50  0000 L CNN
+F 2 "" H 13050 4400 50  0001 C CNN
+F 3 "~" H 13050 4400 50  0001 C CNN
+	1    13050 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12700 4050 13050 4050
+Wire Wire Line
+	13050 4700 12700 4700
+Wire Wire Line
+	13050 4000 13050 4050
+Wire Wire Line
+	13050 4500 13050 4700
+Connection ~ 13050 4050
+Wire Wire Line
+	13050 4050 13050 4300
+Connection ~ 12700 4700
+Wire Wire Line
+	13050 1050 9850 1050
+Wire Wire Line
+	9850 1050 9850 1150
+Connection ~ 9850 1150
+Wire Wire Line
+	9850 1550 11200 1550
+Wire Wire Line
+	11200 1550 11200 2050
+Connection ~ 9850 1550
+Wire Wire Line
+	9850 1550 9850 1500
+Connection ~ 11200 2050
+Wire Wire Line
+	11200 2050 11200 2400
+Wire Wire Line
+	11200 2400 13050 2400
+Wire Wire Line
+	9850 1950 11100 1950
+Wire Wire Line
+	11100 1950 11100 3400
+Wire Wire Line
+	11100 3400 11200 3400
+Connection ~ 9850 1950
+Wire Wire Line
+	9850 1950 9850 1900
+Connection ~ 11200 3400
+Wire Wire Line
+	13050 3700 11100 3700
+Wire Wire Line
+	11100 3700 11100 3400
+Connection ~ 11100 3400
+Wire Wire Line
+	11200 4700 9850 4700
+Wire Wire Line
+	9850 4700 9850 2300
+Connection ~ 11200 4700
+Connection ~ 9850 2300
+Wire Wire Line
+	13050 1050 14650 1050
+Wire Wire Line
+	14650 1050 14650 1650
+Connection ~ 13050 1050
+Wire Wire Line
+	14650 4700 13050 4700
+Connection ~ 13050 4700
+Wire Wire Line
+	13050 2050 14400 2050
+Wire Wire Line
+	14400 2050 14400 2300
+Wire Wire Line
+	14400 2300 14650 2300
+Connection ~ 13050 2050
+Wire Wire Line
+	14650 1650 13650 1650
+Wire Wire Line
+	13650 1650 13650 2400
+Wire Wire Line
+	13650 2400 13050 2400
+Connection ~ 14650 1650
+Wire Wire Line
+	14650 1650 14650 2000
+Connection ~ 13050 2400
+Wire Wire Line
+	13050 3700 13650 3700
+Wire Wire Line
+	13650 3700 13650 2400
+Connection ~ 13050 3700
+Connection ~ 13650 2400
+Wire Wire Line
+	13050 3400 14400 3400
+Wire Wire Line
+	14400 3400 14400 2300
+Connection ~ 13050 3400
+Connection ~ 14400 2300
+Wire Wire Line
+	14650 4700 14650 2300
+Connection ~ 14650 2300
+$EndSCHEMATC
