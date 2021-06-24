@@ -623,11 +623,41 @@ Connection ~ 9850 2300
 Wire Wire Line
 	13050 1050 14650 1050
 Wire Wire Line
-	14650 1050 14650 2000
+	14650 1050 14650 1650
 Connection ~ 13050 1050
-Wire Wire Line
-	14650 2300 14650 4700
 Wire Wire Line
 	14650 4700 13050 4700
 Connection ~ 13050 4700
+Wire Wire Line
+	13050 2050 14400 2050
+Wire Wire Line
+	14400 2050 14400 2300
+Wire Wire Line
+	14400 2300 14650 2300
+Connection ~ 13050 2050
+Wire Wire Line
+	14650 1650 13650 1650
+Wire Wire Line
+	13650 1650 13650 2400
+Wire Wire Line
+	13650 2400 13050 2400
+Connection ~ 14650 1650
+Wire Wire Line
+	14650 1650 14650 2000
+Connection ~ 13050 2400
+Wire Wire Line
+	13050 3700 13650 3700
+Wire Wire Line
+	13650 3700 13650 2400
+Connection ~ 13050 3700
+Connection ~ 13650 2400
+Wire Wire Line
+	13050 3400 14400 3400
+Wire Wire Line
+	14400 3400 14400 2300
+Connection ~ 13050 3400
+Connection ~ 14400 2300
+Wire Wire Line
+	14650 4700 14650 2300
+Connection ~ 14650 2300
 $EndSCHEMATC
