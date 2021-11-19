@@ -180,7 +180,7 @@ U 1 1 618A04C1
 P 6500 2700
 F 0 "BZ1" H 6652 2729 50  0000 L CNN
 F 1 "Buzzer" H 6652 2638 50  0000 L CNN
-F 2 "Buzzer_Beeper:Buzzer_TDK_PS1240P02BT_D12.2mm_H6.5mm" V 6475 2800 50  0001 C CNN
+F 2 "Buzzer_Beeper:resita_buzzer" V 6475 2800 50  0001 C CNN
 F 3 "https://ro.farnell.com/multicomp/mcabt-408-rc/sounder-electro-mech-audio-1-5vp/dp/2361105?st=piezo%20buzzer" V 6475 2800 50  0001 C CNN
 	1    6500 2700
 	1    0    0    -1  
@@ -264,8 +264,8 @@ $Comp
 L Connector_Generic:Conn_02x03_Counter_Clockwise J1
 U 1 1 618B2373
 P 8150 1900
-F 0 "J1" H 8200 2217 50  0000 C CNN
-F 1 "Conn_02x03_Counter_Clockwise" H 8200 2126 50  0000 C CNN
+F 0 "J1" H 8200 2450 50  0000 C CNN
+F 1 "Conn_02x03_Counter_Clockwise" H 8200 2350 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Horizontal" H 8150 1900 50  0001 C CNN
 F 3 "~" H 8150 1900 50  0001 C CNN
 	1    8150 1900
@@ -481,51 +481,131 @@ $EndComp
 $Comp
 L power:+5V #PWR0105
 U 1 1 6194E48C
-P 7650 2000
-F 0 "#PWR0105" H 7650 1850 50  0001 C CNN
-F 1 "+5V" H 7665 2173 50  0000 C CNN
-F 2 "" H 7650 2000 50  0001 C CNN
-F 3 "" H 7650 2000 50  0001 C CNN
-	1    7650 2000
+P 7600 1900
+F 0 "#PWR0105" H 7600 1750 50  0001 C CNN
+F 1 "+5V" H 7615 2073 50  0000 C CNN
+F 2 "" H 7600 1900 50  0001 C CNN
+F 3 "" H 7600 1900 50  0001 C CNN
+	1    7600 1900
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0106
 U 1 1 6194EEB7
-P 8500 2050
-F 0 "#PWR0106" H 8500 1800 50  0001 C CNN
-F 1 "GND" H 8505 1877 50  0000 C CNN
-F 2 "" H 8500 2050 50  0001 C CNN
-F 3 "" H 8500 2050 50  0001 C CNN
-	1    8500 2050
-	1    0    0    -1  
+P 8450 1650
+F 0 "#PWR0106" H 8450 1400 50  0001 C CNN
+F 1 "GND" H 8455 1477 50  0000 C CNN
+F 2 "" H 8450 1650 50  0001 C CNN
+F 3 "" H 8450 1650 50  0001 C CNN
+	1    8450 1650
+	-1   0    0    1   
 $EndComp
-Text Label 7850 1350 0    50   ~ 0
+Text Label 7950 1650 0    50   ~ 0
 P3
-Text Label 8250 1150 0    50   ~ 0
+Text Label 8450 2200 0    50   ~ 0
 P2
-Text Label 8050 1050 0    50   ~ 0
+Text Label 7950 2200 0    50   ~ 0
 P1
-$Comp
-L Device:LED D13
-U 1 1 6194F8A8
-P 6150 2700
-F 0 "D13" V 6189 2582 50  0000 R CNN
-F 1 "LED_red" V 6098 2582 50  0000 R CNN
-F 2 "LED_THT:LED_D5.0mm" H 6150 2700 50  0001 C CNN
-F 3 "~" H 6150 2700 50  0001 C CNN
-	1    6150 2700
-	0    1    1    0   
-$EndComp
 $Comp
 L Device:R_Small R1
 U 1 1 6195008D
 P 6400 2300
 F 0 "R1" H 6459 2346 50  0000 L CNN
-F 1 "R_sound 30k" H 6459 2255 50  0000 L CNN
+F 1 "R_sound 30" H 6459 2255 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P15.24mm_Horizontal" H 6400 2300 50  0001 C CNN
-F 3 "https://ro.farnell.com/te-connectivity/cfr25j10k/res-10k-5-330mw-axial-carbon-film/dp/2329609" H 6400 2300 50  0001 C CNN
+F 3 "https://ro.farnell.com/multicomp/mf50-30r/res-30r-1-500mw-axial-metal-film/dp/9340394" H 6400 2300 50  0001 C CNN
 	1    6400 2300
 	1    0    0    -1  
 $EndComp
+$Comp
+L Device:D D13
+U 1 1 619632A5
+P 6150 2700
+F 0 "D13" V 6104 2780 50  0000 L CNN
+F 1 "D" V 6195 2780 50  0000 L CNN
+F 2 "Diode_THT:D_DO-15_P12.70mm_Horizontal" H 6150 2700 50  0001 C CNN
+F 3 "https://ro.farnell.com/taiwan-semiconductor/1n5391g-r0g/rectifier-single-50v-1-5a-do-204ac/dp/3519207" H 6150 2700 50  0001 C CNN
+	1    6150 2700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7600 1900 7950 1900
+Wire Wire Line
+	8450 2000 8450 2200
+Wire Wire Line
+	7950 2200 7950 2000
+Text Label 8700 1900 0    50   ~ 0
+P4
+Wire Wire Line
+	8450 1650 8450 1800
+Wire Wire Line
+	8450 1900 8700 1900
+Wire Wire Line
+	7950 1650 7950 1800
+$Comp
+L Mechanical:MountingHole_Pad H1
+U 1 1 6195BBE7
+P 7700 2700
+F 0 "H1" V 7654 2850 50  0000 L CNN
+F 1 "MountingHole_Pad" V 7745 2850 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5" H 7700 2700 50  0001 C CNN
+F 3 "~" H 7700 2700 50  0001 C CNN
+	1    7700 2700
+	0    1    1    0   
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H2
+U 1 1 6195F970
+P 7700 2900
+F 0 "H2" V 7654 3050 50  0000 L CNN
+F 1 "MountingHole_Pad" V 7745 3050 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5" H 7700 2900 50  0001 C CNN
+F 3 "~" H 7700 2900 50  0001 C CNN
+	1    7700 2900
+	0    1    1    0   
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H3
+U 1 1 6195FBE9
+P 7700 3100
+F 0 "H3" V 7654 3250 50  0000 L CNN
+F 1 "MountingHole_Pad" V 7745 3250 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5" H 7700 3100 50  0001 C CNN
+F 3 "~" H 7700 3100 50  0001 C CNN
+	1    7700 3100
+	0    1    1    0   
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H4
+U 1 1 6195FEC2
+P 7700 3300
+F 0 "H4" V 7654 3450 50  0000 L CNN
+F 1 "MountingHole_Pad" V 7745 3450 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5" H 7700 3300 50  0001 C CNN
+F 3 "~" H 7700 3300 50  0001 C CNN
+	1    7700 3300
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0107
+U 1 1 61960224
+P 7600 3450
+F 0 "#PWR0107" H 7600 3200 50  0001 C CNN
+F 1 "GND" H 7605 3277 50  0000 C CNN
+F 2 "" H 7600 3450 50  0001 C CNN
+F 3 "" H 7600 3450 50  0001 C CNN
+	1    7600 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7600 2700 7600 2900
+Connection ~ 7600 2900
+Wire Wire Line
+	7600 2900 7600 3100
+Connection ~ 7600 3100
+Wire Wire Line
+	7600 3100 7600 3300
+Connection ~ 7600 3300
+Wire Wire Line
+	7600 3300 7600 3450
 $EndSCHEMATC

@@ -258,19 +258,6 @@ Text Label 1400 3250 0    50   ~ 0
 P1
 Text Label 3450 3250 0    50   ~ 0
 P2
-Text Label 5400 3250 0    50   ~ 0
-P3
-$Comp
-L Connector_Generic:Conn_02x03_Counter_Clockwise J1
-U 1 1 618B2373
-P 8150 1900
-F 0 "J1" H 8200 2450 50  0000 C CNN
-F 1 "Conn_02x03_Counter_Clockwise" H 8200 2350 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Horizontal" H 8150 1900 50  0001 C CNN
-F 3 "~" H 8150 1900 50  0001 C CNN
-	1    8150 1900
-	1    0    0    -1  
-$EndComp
 $Comp
 L Device:Q_NMOS_DGS Q2
 U 1 1 61936070
@@ -481,30 +468,28 @@ $EndComp
 $Comp
 L power:+5V #PWR0105
 U 1 1 6194E48C
-P 7600 1900
-F 0 "#PWR0105" H 7600 1750 50  0001 C CNN
-F 1 "+5V" H 7615 2073 50  0000 C CNN
-F 2 "" H 7600 1900 50  0001 C CNN
-F 3 "" H 7600 1900 50  0001 C CNN
-	1    7600 1900
+P 2650 5400
+F 0 "#PWR0105" H 2650 5250 50  0001 C CNN
+F 1 "+5V" H 2665 5573 50  0000 C CNN
+F 2 "" H 2650 5400 50  0001 C CNN
+F 3 "" H 2650 5400 50  0001 C CNN
+	1    2650 5400
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0106
 U 1 1 6194EEB7
-P 8450 1650
-F 0 "#PWR0106" H 8450 1400 50  0001 C CNN
-F 1 "GND" H 8455 1477 50  0000 C CNN
-F 2 "" H 8450 1650 50  0001 C CNN
-F 3 "" H 8450 1650 50  0001 C CNN
-	1    8450 1650
-	-1   0    0    1   
+P 2850 4550
+F 0 "#PWR0106" H 2850 4300 50  0001 C CNN
+F 1 "GND" H 2855 4377 50  0000 C CNN
+F 2 "" H 2850 4550 50  0001 C CNN
+F 3 "" H 2850 4550 50  0001 C CNN
+	1    2850 4550
+	0    1    1    0   
 $EndComp
-Text Label 7950 1650 0    50   ~ 0
-P3
-Text Label 8450 2200 0    50   ~ 0
+Text Label 2800 4650 3    50   ~ 0
 P2
-Text Label 7950 2200 0    50   ~ 0
+Text Label 2800 4750 3    50   ~ 0
 P1
 $Comp
 L Device:R_Small R1
@@ -529,83 +514,191 @@ F 3 "https://ro.farnell.com/taiwan-semiconductor/1n5391g-r0g/rectifier-single-50
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	7600 1900 7950 1900
+	2650 5400 3000 5400
 Wire Wire Line
-	8450 2000 8450 2200
+	3000 4650 2800 4650
 Wire Wire Line
-	7950 2200 7950 2000
-Text Label 8700 1900 0    50   ~ 0
-P4
+	2800 4750 3000 4750
 Wire Wire Line
-	8450 1650 8450 1800
-Wire Wire Line
-	8450 1900 8700 1900
-Wire Wire Line
-	7950 1650 7950 1800
+	2850 4550 3000 4550
+Text Label 5400 3250 0    50   ~ 0
+signal
+Text Label 6050 5050 0    50   ~ 0
+signal
 $Comp
-L Mechanical:MountingHole_Pad H1
-U 1 1 6195BBE7
-P 7700 2700
-F 0 "H1" V 7654 2850 50  0000 L CNN
-F 1 "MountingHole_Pad" V 7745 2850 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.7mm_M2.5" H 7700 2700 50  0001 C CNN
-F 3 "~" H 7700 2700 50  0001 C CNN
-	1    7700 2700
-	0    1    1    0   
+L Device:R_Small R?
+U 1 1 6198134C
+P 4900 5700
+F 0 "R?" H 4959 5746 50  0000 L CNN
+F 1 "R_sin 20k" H 4959 5655 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P15.24mm_Horizontal" H 4900 5700 50  0001 C CNN
+F 3 "https://ro.farnell.com/te-connectivity/cfr25j10k/res-10k-5-330mw-axial-carbon-film/dp/2329609" H 4900 5700 50  0001 C CNN
+	1    4900 5700
+	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole_Pad H2
-U 1 1 6195F970
-P 7700 2900
-F 0 "H2" V 7654 3050 50  0000 L CNN
-F 1 "MountingHole_Pad" V 7745 3050 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.7mm_M2.5" H 7700 2900 50  0001 C CNN
-F 3 "~" H 7700 2900 50  0001 C CNN
-	1    7700 2900
+L Device:R_Small R?
+U 1 1 61982DFF
+P 5750 5600
+F 0 "R?" H 5809 5646 50  0000 L CNN
+F 1 "R_sin 20k" H 5809 5555 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P15.24mm_Horizontal" H 5750 5600 50  0001 C CNN
+F 3 "https://ro.farnell.com/te-connectivity/cfr25j10k/res-10k-5-330mw-axial-carbon-film/dp/2329609" H 5750 5600 50  0001 C CNN
+	1    5750 5600
 	0    1    1    0   
 $EndComp
+Wire Wire Line
+	5550 5050 5850 5050
 $Comp
-L Mechanical:MountingHole_Pad H3
-U 1 1 6195FBE9
-P 7700 3100
-F 0 "H3" V 7654 3250 50  0000 L CNN
-F 1 "MountingHole_Pad" V 7745 3250 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.7mm_M2.5" H 7700 3100 50  0001 C CNN
-F 3 "~" H 7700 3100 50  0001 C CNN
-	1    7700 3100
-	0    1    1    0   
+L pspice:OPAMP U?
+U 1 1 6197F88E
+P 5250 5050
+F 0 "U?" H 5250 4569 50  0000 C CNN
+F 1 "OPAMP" H 5250 4660 50  0000 C CNN
+F 2 "" H 5250 5050 50  0001 C CNN
+F 3 "https://ro.farnell.com/diodes-inc/as358p-e1/amplifier-40-to-85deg-c-dip-8/dp/3755429" H 5250 5050 50  0001 C CNN
+	1    5250 5050
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	5850 5600 5850 5050
+Connection ~ 5850 5050
+Wire Wire Line
+	5850 5050 6050 5050
+Wire Wire Line
+	5650 5600 4900 5600
+Wire Wire Line
+	4900 5600 4900 5150
+Wire Wire Line
+	4900 5150 4950 5150
+Connection ~ 4900 5600
+$Comp
+L power:GND #PWR?
+U 1 1 6198DA01
+P 4900 5900
+F 0 "#PWR?" H 4900 5650 50  0001 C CNN
+F 1 "GND" H 4905 5727 50  0000 C CNN
+F 2 "" H 4900 5900 50  0001 C CNN
+F 3 "" H 4900 5900 50  0001 C CNN
+	1    4900 5900
+	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole_Pad H4
-U 1 1 6195FEC2
-P 7700 3300
-F 0 "H4" V 7654 3450 50  0000 L CNN
-F 1 "MountingHole_Pad" V 7745 3450 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.7mm_M2.5" H 7700 3300 50  0001 C CNN
-F 3 "~" H 7700 3300 50  0001 C CNN
-	1    7700 3300
-	0    1    1    0   
+L power:GND #PWR?
+U 1 1 6198E005
+P 5150 5400
+F 0 "#PWR?" H 5150 5150 50  0001 C CNN
+F 1 "GND" H 5155 5227 50  0000 C CNN
+F 2 "" H 5150 5400 50  0001 C CNN
+F 3 "" H 5150 5400 50  0001 C CNN
+	1    5150 5400
+	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0107
-U 1 1 61960224
-P 7600 3450
-F 0 "#PWR0107" H 7600 3200 50  0001 C CNN
-F 1 "GND" H 7605 3277 50  0000 C CNN
-F 2 "" H 7600 3450 50  0001 C CNN
-F 3 "" H 7600 3450 50  0001 C CNN
-	1    7600 3450
+L power:+5V #PWR?
+U 1 1 6198E48B
+P 5150 4550
+F 0 "#PWR?" H 5150 4400 50  0001 C CNN
+F 1 "+5V" H 5165 4723 50  0000 C CNN
+F 2 "" H 5150 4550 50  0001 C CNN
+F 3 "" H 5150 4550 50  0001 C CNN
+	1    5150 4550
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7600 2700 7600 2900
-Connection ~ 7600 2900
+	5150 5400 5150 5350
 Wire Wire Line
-	7600 2900 7600 3100
-Connection ~ 7600 3100
+	5150 4550 5150 4750
 Wire Wire Line
-	7600 3100 7600 3300
-Connection ~ 7600 3300
+	4900 5900 4900 5850
+$Comp
+L Device:R_Small R?
+U 1 1 619930BA
+P 5500 4250
+F 0 "R?" H 5559 4296 50  0000 L CNN
+F 1 "R_sin 1k" H 5559 4205 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P15.24mm_Horizontal" H 5500 4250 50  0001 C CNN
+F 3 "https://ro.farnell.com/te-connectivity/cfr25j10k/res-10k-5-330mw-axial-carbon-film/dp/2329609" H 5500 4250 50  0001 C CNN
+	1    5500 4250
+	0    1    1    0   
+$EndComp
 Wire Wire Line
-	7600 3300 7600 3450
+	5850 5050 5850 4250
+Wire Wire Line
+	5850 4250 5600 4250
+$Comp
+L Device:C_Small C?
+U 1 1 6199640A
+P 4500 5200
+F 0 "C?" H 4592 5246 50  0000 L CNN
+F 1 "10uF" H 4592 5155 50  0000 L CNN
+F 2 "" H 4500 5200 50  0001 C CNN
+F 3 "~" H 4500 5200 50  0001 C CNN
+	1    4500 5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 5100 4500 4950
+Wire Wire Line
+	4500 4250 5400 4250
+Wire Wire Line
+	4950 4950 4500 4950
+Connection ~ 4500 4950
+Wire Wire Line
+	4500 4950 4500 4250
+Wire Wire Line
+	4900 5850 4500 5850
+Wire Wire Line
+	4500 5850 4500 5300
+Connection ~ 4900 5850
+Wire Wire Line
+	4900 5850 4900 5800
+$Comp
+L Connector:Conn_01x03_Female J?
+U 1 1 6199D8F3
+P 3200 5300
+F 0 "J?" H 3228 5326 50  0000 L CNN
+F 1 "Conn_01x03_Female" H 3228 5235 50  0000 L CNN
+F 2 "" H 3200 5300 50  0001 C CNN
+F 3 "~" H 3200 5300 50  0001 C CNN
+	1    3200 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 619A7AB1
+P 2850 5200
+F 0 "#PWR?" H 2850 4950 50  0001 C CNN
+F 1 "GND" H 2855 5027 50  0000 C CNN
+F 2 "" H 2850 5200 50  0001 C CNN
+F 3 "" H 2850 5200 50  0001 C CNN
+	1    2850 5200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2850 5200 3000 5200
+$Comp
+L Connector:Conn_01x04_Female J?
+U 1 1 619ADA7F
+P 3200 4650
+F 0 "J?" H 3228 4626 50  0000 L CNN
+F 1 "Conn_01x04_Female" H 3228 4535 50  0000 L CNN
+F 2 "" H 3200 4650 50  0001 C CNN
+F 3 "~" H 3200 4650 50  0001 C CNN
+	1    3200 4650
+	1    0    0    -1  
+$EndComp
+NoConn ~ 3000 4850
+NoConn ~ 3000 5300
+$Comp
+L 74xGxx:74LVC2G32 U?
+U 1 1 619B3EFE
+P 1400 750
+F 0 "U?" H 1375 1017 50  0000 C CNN
+F 1 "74LVC2G32" H 1375 926 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W10.16mm" H 1400 750 50  0001 C CNN
+F 3 "https://ro.farnell.com/texas-instruments/sn74hc32n/ic-quad-2-input-or-74hc32-dip14/dp/3120475?st=gate%20or" H 1400 750 50  0001 C CNN
+	1    1400 750 
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

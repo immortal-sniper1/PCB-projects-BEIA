@@ -1,5 +1,6 @@
 EESchema Schematic File Version 4
-EELAYER 30 0
+LIBS:25-station-led-alarm-cache
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -511,9 +512,9 @@ L Device:R_Small R1
 U 1 1 6195008D
 P 6400 2300
 F 0 "R1" H 6459 2346 50  0000 L CNN
-F 1 "R_sound 30" H 6459 2255 50  0000 L CNN
+F 1 "R_sound 30k" H 6459 2255 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P15.24mm_Horizontal" H 6400 2300 50  0001 C CNN
-F 3 "https://ro.farnell.com/multicomp/mf50-30r/res-30r-1-500mw-axial-metal-film/dp/9340394" H 6400 2300 50  0001 C CNN
+F 3 "https://ro.farnell.com/te-connectivity/cfr25j10k/res-10k-5-330mw-axial-carbon-film/dp/2329609" H 6400 2300 50  0001 C CNN
 	1    6400 2300
 	1    0    0    -1  
 $EndComp
@@ -542,70 +543,4 @@ Wire Wire Line
 	8450 1900 8700 1900
 Wire Wire Line
 	7950 1650 7950 1800
-$Comp
-L Mechanical:MountingHole_Pad H1
-U 1 1 6195BBE7
-P 7700 2700
-F 0 "H1" V 7654 2850 50  0000 L CNN
-F 1 "MountingHole_Pad" V 7745 2850 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.7mm_M2.5" H 7700 2700 50  0001 C CNN
-F 3 "~" H 7700 2700 50  0001 C CNN
-	1    7700 2700
-	0    1    1    0   
-$EndComp
-$Comp
-L Mechanical:MountingHole_Pad H2
-U 1 1 6195F970
-P 7700 2900
-F 0 "H2" V 7654 3050 50  0000 L CNN
-F 1 "MountingHole_Pad" V 7745 3050 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.7mm_M2.5" H 7700 2900 50  0001 C CNN
-F 3 "~" H 7700 2900 50  0001 C CNN
-	1    7700 2900
-	0    1    1    0   
-$EndComp
-$Comp
-L Mechanical:MountingHole_Pad H3
-U 1 1 6195FBE9
-P 7700 3100
-F 0 "H3" V 7654 3250 50  0000 L CNN
-F 1 "MountingHole_Pad" V 7745 3250 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.7mm_M2.5" H 7700 3100 50  0001 C CNN
-F 3 "~" H 7700 3100 50  0001 C CNN
-	1    7700 3100
-	0    1    1    0   
-$EndComp
-$Comp
-L Mechanical:MountingHole_Pad H4
-U 1 1 6195FEC2
-P 7700 3300
-F 0 "H4" V 7654 3450 50  0000 L CNN
-F 1 "MountingHole_Pad" V 7745 3450 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.7mm_M2.5" H 7700 3300 50  0001 C CNN
-F 3 "~" H 7700 3300 50  0001 C CNN
-	1    7700 3300
-	0    1    1    0   
-$EndComp
-$Comp
-L power:GND #PWR0107
-U 1 1 61960224
-P 7600 3450
-F 0 "#PWR0107" H 7600 3200 50  0001 C CNN
-F 1 "GND" H 7605 3277 50  0000 C CNN
-F 2 "" H 7600 3450 50  0001 C CNN
-F 3 "" H 7600 3450 50  0001 C CNN
-	1    7600 3450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7600 2700 7600 2900
-Connection ~ 7600 2900
-Wire Wire Line
-	7600 2900 7600 3100
-Connection ~ 7600 3100
-Wire Wire Line
-	7600 3100 7600 3300
-Connection ~ 7600 3300
-Wire Wire Line
-	7600 3300 7600 3450
 $EndSCHEMATC
