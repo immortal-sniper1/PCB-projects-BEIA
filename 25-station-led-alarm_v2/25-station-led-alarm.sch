@@ -1,5 +1,6 @@
 EESchema Schematic File Version 4
-EELAYER 30 0
+LIBS:25-station-led-alarm-cache
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -139,7 +140,7 @@ F 3 "" H 4450 3700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1800 3250 2050 3250
+	1800 3250 1900 3250
 Wire Wire Line
 	2500 2950 2500 3050
 Wire Wire Line
@@ -174,50 +175,6 @@ Wire Wire Line
 Wire Wire Line
 	4450 3550 4450 3700
 Connection ~ 4450 3550
-$Comp
-L Device:Buzzer BZ1
-U 1 1 618A04C1
-P 6500 2700
-F 0 "BZ1" H 6652 2729 50  0000 L CNN
-F 1 "Buzzer" H 6652 2638 50  0000 L CNN
-F 2 "Buzzer_Beeper:resita_buzzer" V 6475 2800 50  0001 C CNN
-F 3 "https://ro.farnell.com/multicomp/mcabt-408-rc/sounder-electro-mech-audio-1-5vp/dp/2361105?st=piezo%20buzzer" V 6475 2800 50  0001 C CNN
-	1    6500 2700
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0104
-U 1 1 618A60AF
-P 6400 3700
-F 0 "#PWR0104" H 6400 3450 50  0001 C CNN
-F 1 "GND" H 6405 3527 50  0000 C CNN
-F 2 "" H 6400 3700 50  0001 C CNN
-F 3 "" H 6400 3700 50  0001 C CNN
-	1    6400 3700
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5400 3250 5600 3250
-Wire Wire Line
-	5800 3250 5950 3250
-Wire Wire Line
-	5950 3250 5950 3350
-Connection ~ 5950 3250
-Wire Wire Line
-	5950 3250 6100 3250
-Wire Wire Line
-	5950 3550 6400 3550
-Wire Wire Line
-	6400 3550 6400 3450
-Wire Wire Line
-	6400 3550 6400 3700
-Connection ~ 6400 3550
-Wire Wire Line
-	6400 1800 6400 2200
-Wire Wire Line
-	6400 2400 6400 2550
-Wire Wire Line
-	6400 2800 6400 2850
 Wire Wire Line
 	6150 2550 6400 2550
 Connection ~ 6400 2550
@@ -225,35 +182,6 @@ Wire Wire Line
 	6400 2550 6400 2600
 Wire Wire Line
 	6150 2850 6400 2850
-Connection ~ 6400 2850
-Wire Wire Line
-	6400 2850 6400 3050
-Text Notes 5500 2450 0    50   ~ 0
-sau dioda normala , \nde cercetat la nevoie
-Wire Notes Line
-	3250 1550 3250 4050
-Wire Notes Line
-	3250 4050 1200 4050
-Wire Notes Line
-	1200 4050 1200 1550
-Wire Notes Line
-	1200 1550 3250 1550
-Wire Notes Line
-	3350 1550 3350 4050
-Wire Notes Line
-	3350 4050 5150 4050
-Wire Notes Line
-	5150 4050 5150 1550
-Wire Notes Line
-	3350 1550 5150 1550
-Wire Notes Line
-	5250 1550 5250 4050
-Wire Notes Line
-	5250 4050 7150 4050
-Wire Notes Line
-	7150 4050 7150 1550
-Wire Notes Line
-	7150 1550 5250 1550
 Text Label 1400 3250 0    50   ~ 0
 P1
 Text Label 3450 3250 0    50   ~ 0
@@ -267,17 +195,6 @@ F 1 "Q_NMOS_DGS" H 4554 3205 50  0000 L CNN
 F 2 "Package_TO_SOT_THT:TO-92" H 4550 3350 50  0001 C CNN
 F 3 "~" H 4350 3250 50  0001 C CNN
 	1    4350 3250
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:Q_NMOS_DGS Q3
-U 1 1 61936F73
-P 6300 3250
-F 0 "Q3" H 6504 3296 50  0000 L CNN
-F 1 "Q_NMOS_DGS" H 6504 3205 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-92" H 6500 3350 50  0001 C CNN
-F 3 "~" H 6300 3250 50  0001 C CNN
-	1    6300 3250
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -409,7 +326,7 @@ F 3 "~" H 4800 1950 50  0001 C CNN
 $EndComp
 Connection ~ 4800 1800
 Wire Wire Line
-	4800 1800 6400 1800
+	4800 1800 5600 1800
 $Comp
 L Device:R_Small R7
 U 1 1 6193D851
@@ -422,17 +339,6 @@ F 3 "https://ro.farnell.com/te-connectivity/cfr25j10k/res-10k-5-330mw-axial-carb
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small R8
-U 1 1 6193DD8F
-P 5950 3450
-F 0 "R8" H 6009 3496 50  0000 L CNN
-F 1 "R_gate 10k" H 6009 3405 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P15.24mm_Horizontal" H 5950 3450 50  0001 C CNN
-F 3 "https://ro.farnell.com/te-connectivity/cfr25j10k/res-10k-5-330mw-axial-carbon-film/dp/2329609" H 5950 3450 50  0001 C CNN
-	1    5950 3450
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:R_Small R5
 U 1 1 6194BBB3
 P 3750 3250
@@ -441,17 +347,6 @@ F 1 "R_led 15" H 3809 3205 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal" H 3750 3250 50  0001 C CNN
 F 3 "https://ro.farnell.com/multicomp-pro/mp006860/res-15r-0-25w-axial-metal-film/dp/3650025" H 3750 3250 50  0001 C CNN
 	1    3750 3250
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R_Small R9
-U 1 1 6194D4BE
-P 5700 3250
-F 0 "R9" H 5759 3296 50  0000 L CNN
-F 1 "R_led 15" H 5759 3205 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal" H 5700 3250 50  0001 C CNN
-F 3 "https://ro.farnell.com/multicomp-pro/mp006860/res-15r-0-25w-axial-metal-film/dp/3650025" H 5700 3250 50  0001 C CNN
-	1    5700 3250
 	0    1    1    0   
 $EndComp
 $Comp
@@ -492,17 +387,6 @@ P2
 Text Label 2800 4750 3    50   ~ 0
 P1
 $Comp
-L Device:R_Small R1
-U 1 1 6195008D
-P 6400 2300
-F 0 "R1" H 6459 2346 50  0000 L CNN
-F 1 "R_sound 30" H 6459 2255 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P15.24mm_Horizontal" H 6400 2300 50  0001 C CNN
-F 3 "https://ro.farnell.com/multicomp/mf50-30r/res-30r-1-500mw-axial-metal-film/dp/9340394" H 6400 2300 50  0001 C CNN
-	1    6400 2300
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:D D13
 U 1 1 619632A5
 P 6150 2700
@@ -521,154 +405,22 @@ Wire Wire Line
 	2800 4750 3000 4750
 Wire Wire Line
 	2850 4550 3000 4550
-Text Label 5400 3250 0    50   ~ 0
-signal
-Text Label 6050 5050 0    50   ~ 0
-signal
 $Comp
-L Device:R_Small R?
-U 1 1 6198134C
-P 4900 5700
-F 0 "R?" H 4959 5746 50  0000 L CNN
-F 1 "R_sin 20k" H 4959 5655 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P15.24mm_Horizontal" H 4900 5700 50  0001 C CNN
-F 3 "https://ro.farnell.com/te-connectivity/cfr25j10k/res-10k-5-330mw-axial-carbon-film/dp/2329609" H 4900 5700 50  0001 C CNN
-	1    4900 5700
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Small R?
-U 1 1 61982DFF
-P 5750 5600
-F 0 "R?" H 5809 5646 50  0000 L CNN
-F 1 "R_sin 20k" H 5809 5555 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P15.24mm_Horizontal" H 5750 5600 50  0001 C CNN
-F 3 "https://ro.farnell.com/te-connectivity/cfr25j10k/res-10k-5-330mw-axial-carbon-film/dp/2329609" H 5750 5600 50  0001 C CNN
-	1    5750 5600
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	5550 5050 5850 5050
-$Comp
-L pspice:OPAMP U?
-U 1 1 6197F88E
-P 5250 5050
-F 0 "U?" H 5250 4569 50  0000 C CNN
-F 1 "OPAMP" H 5250 4660 50  0000 C CNN
-F 2 "" H 5250 5050 50  0001 C CNN
-F 3 "https://ro.farnell.com/diodes-inc/as358p-e1/amplifier-40-to-85deg-c-dip-8/dp/3755429" H 5250 5050 50  0001 C CNN
-	1    5250 5050
-	1    0    0    1   
-$EndComp
-Wire Wire Line
-	5850 5600 5850 5050
-Connection ~ 5850 5050
-Wire Wire Line
-	5850 5050 6050 5050
-Wire Wire Line
-	5650 5600 4900 5600
-Wire Wire Line
-	4900 5600 4900 5150
-Wire Wire Line
-	4900 5150 4950 5150
-Connection ~ 4900 5600
-$Comp
-L power:GND #PWR?
-U 1 1 6198DA01
-P 4900 5900
-F 0 "#PWR?" H 4900 5650 50  0001 C CNN
-F 1 "GND" H 4905 5727 50  0000 C CNN
-F 2 "" H 4900 5900 50  0001 C CNN
-F 3 "" H 4900 5900 50  0001 C CNN
-	1    4900 5900
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 6198E005
-P 5150 5400
-F 0 "#PWR?" H 5150 5150 50  0001 C CNN
-F 1 "GND" H 5155 5227 50  0000 C CNN
-F 2 "" H 5150 5400 50  0001 C CNN
-F 3 "" H 5150 5400 50  0001 C CNN
-	1    5150 5400
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR?
-U 1 1 6198E48B
-P 5150 4550
-F 0 "#PWR?" H 5150 4400 50  0001 C CNN
-F 1 "+5V" H 5165 4723 50  0000 C CNN
-F 2 "" H 5150 4550 50  0001 C CNN
-F 3 "" H 5150 4550 50  0001 C CNN
-	1    5150 4550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5150 5400 5150 5350
-Wire Wire Line
-	5150 4550 5150 4750
-Wire Wire Line
-	4900 5900 4900 5850
-$Comp
-L Device:R_Small R?
-U 1 1 619930BA
-P 5500 4250
-F 0 "R?" H 5559 4296 50  0000 L CNN
-F 1 "R_sin 1k" H 5559 4205 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P15.24mm_Horizontal" H 5500 4250 50  0001 C CNN
-F 3 "https://ro.farnell.com/te-connectivity/cfr25j10k/res-10k-5-330mw-axial-carbon-film/dp/2329609" H 5500 4250 50  0001 C CNN
-	1    5500 4250
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	5850 5050 5850 4250
-Wire Wire Line
-	5850 4250 5600 4250
-$Comp
-L Device:C_Small C?
-U 1 1 6199640A
-P 4500 5200
-F 0 "C?" H 4592 5246 50  0000 L CNN
-F 1 "10uF" H 4592 5155 50  0000 L CNN
-F 2 "" H 4500 5200 50  0001 C CNN
-F 3 "~" H 4500 5200 50  0001 C CNN
-	1    4500 5200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4500 5100 4500 4950
-Wire Wire Line
-	4500 4250 5400 4250
-Wire Wire Line
-	4950 4950 4500 4950
-Connection ~ 4500 4950
-Wire Wire Line
-	4500 4950 4500 4250
-Wire Wire Line
-	4900 5850 4500 5850
-Wire Wire Line
-	4500 5850 4500 5300
-Connection ~ 4900 5850
-Wire Wire Line
-	4900 5850 4900 5800
-$Comp
-L Connector:Conn_01x03_Female J?
+L Connector:Conn_01x03_Female J2
 U 1 1 6199D8F3
 P 3200 5300
-F 0 "J?" H 3228 5326 50  0000 L CNN
+F 0 "J2" H 3228 5326 50  0000 L CNN
 F 1 "Conn_01x03_Female" H 3228 5235 50  0000 L CNN
-F 2 "" H 3200 5300 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 3200 5300 50  0001 C CNN
 F 3 "~" H 3200 5300 50  0001 C CNN
 	1    3200 5300
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR01
 U 1 1 619A7AB1
 P 2850 5200
-F 0 "#PWR?" H 2850 4950 50  0001 C CNN
+F 0 "#PWR01" H 2850 4950 50  0001 C CNN
 F 1 "GND" H 2855 5027 50  0000 C CNN
 F 2 "" H 2850 5200 50  0001 C CNN
 F 3 "" H 2850 5200 50  0001 C CNN
@@ -678,12 +430,12 @@ $EndComp
 Wire Wire Line
 	2850 5200 3000 5200
 $Comp
-L Connector:Conn_01x04_Female J?
+L Connector:Conn_01x04_Female J1
 U 1 1 619ADA7F
 P 3200 4650
-F 0 "J?" H 3228 4626 50  0000 L CNN
+F 0 "J1" H 3228 4626 50  0000 L CNN
 F 1 "Conn_01x04_Female" H 3228 4535 50  0000 L CNN
-F 2 "" H 3200 4650 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 3200 4650 50  0001 C CNN
 F 3 "~" H 3200 4650 50  0001 C CNN
 	1    3200 4650
 	1    0    0    -1  
@@ -691,14 +443,102 @@ $EndComp
 NoConn ~ 3000 4850
 NoConn ~ 3000 5300
 $Comp
-L 74xGxx:74LVC2G32 U?
-U 1 1 619B3EFE
-P 1400 750
-F 0 "U?" H 1375 1017 50  0000 C CNN
-F 1 "74LVC2G32" H 1375 926 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W10.16mm" H 1400 750 50  0001 C CNN
-F 3 "https://ro.farnell.com/texas-instruments/sn74hc32n/ic-quad-2-input-or-74hc32-dip14/dp/3120475?st=gate%20or" H 1400 750 50  0001 C CNN
-	1    1400 750 
+L Device:Q_NMOS_DGS Q3
+U 1 1 61983C79
+P 5750 3550
+F 0 "Q3" H 5954 3596 50  0000 L CNN
+F 1 "Q_NMOS_DGS" H 5954 3505 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92" H 5950 3650 50  0001 C CNN
+F 3 "~" H 5750 3550 50  0001 C CNN
+	1    5750 3550
 	1    0    0    -1  
 $EndComp
+$Comp
+L Device:Q_NMOS_DGS Q4
+U 1 1 619842EC
+P 6500 3550
+F 0 "Q4" H 6704 3596 50  0000 L CNN
+F 1 "Q_NMOS_DGS" H 6704 3505 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92" H 6700 3650 50  0001 C CNN
+F 3 "~" H 6500 3550 50  0001 C CNN
+	1    6500 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 61985E8A
+P 5850 3900
+F 0 "#PWR02" H 5850 3650 50  0001 C CNN
+F 1 "GND" H 5855 3727 50  0000 C CNN
+F 2 "" H 5850 3900 50  0001 C CNN
+F 3 "" H 5850 3900 50  0001 C CNN
+	1    5850 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5850 3750 5850 3900
+Wire Wire Line
+	5850 3750 6600 3750
+Connection ~ 5850 3750
+Wire Wire Line
+	6400 2850 6400 3350
+Wire Wire Line
+	6400 3350 6600 3350
+Connection ~ 6400 2850
+Wire Wire Line
+	6400 3350 5850 3350
+Connection ~ 6400 3350
+Wire Wire Line
+	4000 3250 4000 3100
+Wire Wire Line
+	4000 3100 5550 3100
+Wire Wire Line
+	5550 3100 5550 3550
+Wire Wire Line
+	6300 3550 6300 4250
+Wire Wire Line
+	6300 4250 1900 4250
+Wire Wire Line
+	1900 4250 1900 3250
+Connection ~ 1900 3250
+Wire Wire Line
+	1900 3250 2050 3250
+$Comp
+L Connector:Conn_01x02_Female J3
+U 1 1 6198EB28
+P 5800 2050
+F 0 "J3" H 5828 2026 50  0000 L CNN
+F 1 "Conn_01x02_Female" H 5828 1935 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 5800 2050 50  0001 C CNN
+F 3 "~" H 5800 2050 50  0001 C CNN
+	1    5800 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x02_Female J4
+U 1 1 6198F8BC
+P 6700 2650
+F 0 "J4" H 6728 2626 50  0000 L CNN
+F 1 "Conn_01x02_Female" H 6728 2535 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 6700 2650 50  0001 C CNN
+F 3 "~" H 6700 2650 50  0001 C CNN
+	1    6700 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6400 2600 6500 2600
+Wire Wire Line
+	6500 2600 6500 2650
+Wire Wire Line
+	6500 2750 6400 2750
+Wire Wire Line
+	6400 2750 6400 2850
+Wire Wire Line
+	5600 2050 5600 1800
+Wire Wire Line
+	5600 2150 5600 2350
+Wire Wire Line
+	5600 2350 6400 2350
+Wire Wire Line
+	6400 2350 6400 2550
 $EndSCHEMATC
