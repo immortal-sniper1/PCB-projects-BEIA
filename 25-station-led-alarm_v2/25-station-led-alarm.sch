@@ -398,7 +398,7 @@ F 3 "https://ro.farnell.com/taiwan-semiconductor/1n5391g-r0g/rectifier-single-50
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	2650 5400 3000 5400
+	2650 5400 2900 5400
 Wire Wire Line
 	3000 4650 2800 4650
 Wire Wire Line
@@ -428,7 +428,7 @@ F 3 "" H 2850 5200 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	2850 5200 3000 5200
+	2850 5200 2900 5200
 $Comp
 L Connector:Conn_01x04_Female J1
 U 1 1 619ADA7F
@@ -541,4 +541,21 @@ Wire Wire Line
 	5600 2350 6400 2350
 Wire Wire Line
 	6400 2350 6400 2550
+$Comp
+L Device:C_Small C3
+U 1 1 619B2B9C
+P 2900 5300
+F 0 "C3" H 2992 5346 50  0000 L CNN
+F 1 "C_Small 47" H 2992 5255 50  0000 L CNN
+F 2 "Capacitor_THT:C_Rect_L9.0mm_W3.2mm_P7.50mm_MKT" H 2900 5300 50  0001 C CNN
+F 3 "~" H 2900 5300 50  0001 C CNN
+	1    2900 5300
+	1    0    0    -1  
+$EndComp
+Connection ~ 2900 5200
+Wire Wire Line
+	2900 5200 3000 5200
+Connection ~ 2900 5400
+Wire Wire Line
+	2900 5400 3000 5400
 $EndSCHEMATC
