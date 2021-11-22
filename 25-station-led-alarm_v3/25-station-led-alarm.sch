@@ -1,0 +1,763 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:LED D2
+U 1 1 6188CDB7
+P 2150 2350
+F 0 "D2" V 2250 2550 50  0000 R CNN
+F 1 "LED_galben" V 2150 2850 50  0000 R CNN
+F 2 "LED_THT:LED_D3.0mm" H 2150 2350 50  0001 C CNN
+F 3 "~" H 2150 2350 50  0001 C CNN
+	1    2150 2350
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2150 2100 2150 2200
+Wire Wire Line
+	2500 2100 2500 2200
+Wire Wire Line
+	2850 2100 2850 2200
+$Comp
+L Device:LED D8
+U 1 1 618930D4
+P 4100 2350
+F 0 "D8" V 4000 2500 50  0000 R CNN
+F 1 "LED_red" V 3900 2650 50  0000 R CNN
+F 2 "LED_THT:LED_D5.0mm" H 4100 2350 50  0001 C CNN
+F 3 "~" H 4100 2350 50  0001 C CNN
+	1    4100 2350
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4100 2100 4100 2200
+Wire Wire Line
+	4450 2100 4450 2200
+Wire Wire Line
+	4800 2100 4800 2200
+Wire Wire Line
+	2150 2500 2500 2500
+Connection ~ 2500 2500
+Wire Wire Line
+	2500 2500 2850 2500
+Wire Wire Line
+	2500 2500 2500 2750
+Wire Wire Line
+	4100 2500 4450 2500
+Connection ~ 4450 2500
+Wire Wire Line
+	4450 2500 4800 2500
+Wire Wire Line
+	4450 2500 4450 2750
+$Comp
+L power:+5V #PWR0101
+U 1 1 61893E90
+P 1600 1800
+F 0 "#PWR0101" H 1600 1650 50  0001 C CNN
+F 1 "+5V" H 1615 1973 50  0000 C CNN
+F 2 "" H 1600 1800 50  0001 C CNN
+F 3 "" H 1600 1800 50  0001 C CNN
+	1    1600 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 618946E6
+P 2500 3700
+F 0 "#PWR0102" H 2500 3450 50  0001 C CNN
+F 1 "GND" H 2505 3527 50  0000 C CNN
+F 2 "" H 2500 3700 50  0001 C CNN
+F 3 "" H 2500 3700 50  0001 C CNN
+	1    2500 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R3
+U 1 1 618954C9
+P 4450 2850
+F 0 "R3" H 4509 2896 50  0000 L CNN
+F 1 "R_led 4" H 4509 2805 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal" H 4450 2850 50  0001 C CNN
+F 3 "https://ro.farnell.com/multicomp/mcf-0-25w-3r9/res-3r9-5-250mw-axial-carbon-film/dp/9339515" H 4450 2850 50  0001 C CNN
+	1    4450 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R6
+U 1 1 61895B76
+P 2500 2850
+F 0 "R6" H 2559 2896 50  0000 L CNN
+F 1 "R_led 15" H 2559 2805 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal" H 2500 2850 50  0001 C CNN
+F 3 "https://ro.farnell.com/multicomp-pro/mp006860/res-15r-0-25w-axial-metal-film/dp/3650025" H 2500 2850 50  0001 C CNN
+	1    2500 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R2
+U 1 1 618987F6
+P 2050 3450
+F 0 "R2" H 2109 3496 50  0000 L CNN
+F 1 "R_gate 10k" H 2109 3405 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P15.24mm_Horizontal" H 2050 3450 50  0001 C CNN
+F 3 "https://ro.farnell.com/te-connectivity/cfr25j10k/res-10k-5-330mw-axial-carbon-film/dp/2329609" H 2050 3450 50  0001 C CNN
+	1    2050 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 6189B6ED
+P 4450 3700
+F 0 "#PWR0103" H 4450 3450 50  0001 C CNN
+F 1 "GND" H 4455 3527 50  0000 C CNN
+F 2 "" H 4450 3700 50  0001 C CNN
+F 3 "" H 4450 3700 50  0001 C CNN
+	1    4450 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1800 3250 1900 3250
+Wire Wire Line
+	2500 2950 2500 3050
+Wire Wire Line
+	2500 3450 2500 3550
+Wire Wire Line
+	2050 3550 2500 3550
+Connection ~ 2500 3550
+Wire Wire Line
+	2500 3550 2500 3700
+Wire Wire Line
+	2050 3350 2050 3250
+Connection ~ 2050 3250
+Wire Wire Line
+	2050 3250 2200 3250
+Wire Wire Line
+	1400 3250 1600 3250
+Wire Wire Line
+	3450 3250 3650 3250
+Wire Wire Line
+	3850 3250 4000 3250
+Wire Wire Line
+	4000 3250 4000 3350
+Connection ~ 4000 3250
+Wire Wire Line
+	4000 3250 4150 3250
+Wire Wire Line
+	4000 3550 4450 3550
+Wire Wire Line
+	4450 3550 4450 3450
+Wire Wire Line
+	4450 2950 4450 3050
+Wire Wire Line
+	4450 3550 4450 3700
+Connection ~ 4450 3550
+Wire Wire Line
+	6150 2550 6400 2550
+Connection ~ 6400 2550
+Wire Wire Line
+	6400 2550 6400 2600
+Wire Wire Line
+	6150 2850 6400 2850
+Text Label 1400 3250 0    50   ~ 0
+P1
+Text Label 3450 3250 0    50   ~ 0
+P2
+Wire Wire Line
+	1600 1800 2150 1800
+$Comp
+L Device:LED D1
+U 1 1 61937DC0
+P 2150 1950
+F 0 "D1" V 2200 2150 50  0000 R CNN
+F 1 "LED_galben" V 2100 2450 50  0000 R CNN
+F 2 "LED_THT:LED_D3.0mm" H 2150 1950 50  0001 C CNN
+F 3 "~" H 2150 1950 50  0001 C CNN
+	1    2150 1950
+	0    -1   -1   0   
+$EndComp
+Connection ~ 2150 1800
+Wire Wire Line
+	2150 1800 2500 1800
+$Comp
+L Device:LED D3
+U 1 1 6193848E
+P 2500 1950
+F 0 "D3" V 2800 1950 50  0000 R CNN
+F 1 "LED_galben" V 2750 2100 50  0000 R CNN
+F 2 "LED_THT:LED_D3.0mm" H 2500 1950 50  0001 C CNN
+F 3 "~" H 2500 1950 50  0001 C CNN
+	1    2500 1950
+	0    -1   -1   0   
+$EndComp
+Connection ~ 2500 1800
+Wire Wire Line
+	2500 1800 2850 1800
+$Comp
+L Device:LED D4
+U 1 1 6193892A
+P 2850 1950
+F 0 "D4" V 2889 1832 50  0000 R CNN
+F 1 "LED_galben" V 2798 1832 50  0000 R CNN
+F 2 "LED_THT:LED_D3.0mm" H 2850 1950 50  0001 C CNN
+F 3 "~" H 2850 1950 50  0001 C CNN
+	1    2850 1950
+	0    -1   -1   0   
+$EndComp
+Connection ~ 2850 1800
+Wire Wire Line
+	2850 1800 4100 1800
+$Comp
+L Device:LED D10
+U 1 1 61938EAF
+P 2850 2350
+F 0 "D10" V 2889 2232 50  0000 R CNN
+F 1 "LED_galben" V 2798 2232 50  0000 R CNN
+F 2 "LED_THT:LED_D3.0mm" H 2850 2350 50  0001 C CNN
+F 3 "~" H 2850 2350 50  0001 C CNN
+	1    2850 2350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D9
+U 1 1 6193932C
+P 2500 2350
+F 0 "D9" V 2300 2200 50  0000 R CNN
+F 1 "LED_galben" V 2200 2300 50  0000 R CNN
+F 2 "LED_THT:LED_D3.0mm" H 2500 2350 50  0001 C CNN
+F 3 "~" H 2500 2350 50  0001 C CNN
+	1    2500 2350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D5
+U 1 1 61939FB0
+P 4100 1950
+F 0 "D5" V 4450 2100 50  0000 R CNN
+F 1 "LED_red" V 4350 2150 50  0000 R CNN
+F 2 "LED_THT:LED_D5.0mm" H 4100 1950 50  0001 C CNN
+F 3 "~" H 4100 1950 50  0001 C CNN
+	1    4100 1950
+	0    -1   -1   0   
+$EndComp
+Connection ~ 4100 1800
+Wire Wire Line
+	4100 1800 4450 1800
+$Comp
+L Device:LED D6
+U 1 1 6193A3CD
+P 4450 1950
+F 0 "D6" V 4800 1950 50  0000 R CNN
+F 1 "LED_red" V 4700 2000 50  0000 R CNN
+F 2 "LED_THT:LED_D5.0mm" H 4450 1950 50  0001 C CNN
+F 3 "~" H 4450 1950 50  0001 C CNN
+	1    4450 1950
+	0    -1   -1   0   
+$EndComp
+Connection ~ 4450 1800
+Wire Wire Line
+	4450 1800 4800 1800
+$Comp
+L Device:LED D11
+U 1 1 6193A7CD
+P 4450 2350
+F 0 "D11" V 4250 2250 50  0000 R CNN
+F 1 "LED_red" V 4150 2300 50  0000 R CNN
+F 2 "LED_THT:LED_D5.0mm" H 4450 2350 50  0001 C CNN
+F 3 "~" H 4450 2350 50  0001 C CNN
+	1    4450 2350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D12
+U 1 1 6193AB03
+P 4800 2350
+F 0 "D12" V 4650 2150 50  0000 R CNN
+F 1 "LED_red" V 4750 2300 50  0000 R CNN
+F 2 "LED_THT:LED_D5.0mm" H 4800 2350 50  0001 C CNN
+F 3 "~" H 4800 2350 50  0001 C CNN
+	1    4800 2350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D7
+U 1 1 6193AEAA
+P 4800 1950
+F 0 "D7" V 4839 1832 50  0000 R CNN
+F 1 "LED_red" V 4748 1832 50  0000 R CNN
+F 2 "LED_THT:LED_D5.0mm" H 4800 1950 50  0001 C CNN
+F 3 "~" H 4800 1950 50  0001 C CNN
+	1    4800 1950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R7
+U 1 1 6193D851
+P 4000 3450
+F 0 "R7" H 4059 3496 50  0000 L CNN
+F 1 "R_gate 10k" H 4059 3405 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P15.24mm_Horizontal" H 4000 3450 50  0001 C CNN
+F 3 "https://ro.farnell.com/te-connectivity/cfr25j10k/res-10k-5-330mw-axial-carbon-film/dp/2329609" H 4000 3450 50  0001 C CNN
+	1    4000 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R5
+U 1 1 6194BBB3
+P 3750 3250
+F 0 "R5" H 3809 3296 50  0000 L CNN
+F 1 "R_led 15" H 3809 3205 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal" H 3750 3250 50  0001 C CNN
+F 3 "https://ro.farnell.com/multicomp-pro/mp006860/res-15r-0-25w-axial-metal-film/dp/3650025" H 3750 3250 50  0001 C CNN
+	1    3750 3250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R4
+U 1 1 6194D93D
+P 1700 3250
+F 0 "R4" H 1759 3296 50  0000 L CNN
+F 1 "R_led 15" H 1759 3205 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal" H 1700 3250 50  0001 C CNN
+F 3 "https://ro.farnell.com/multicomp-pro/mp006860/res-15r-0-25w-axial-metal-film/dp/3650025" H 1700 3250 50  0001 C CNN
+	1    1700 3250
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+5V #PWR0105
+U 1 1 6194E48C
+P 2500 5400
+F 0 "#PWR0105" H 2500 5250 50  0001 C CNN
+F 1 "+5V" H 2515 5573 50  0000 C CNN
+F 2 "" H 2500 5400 50  0001 C CNN
+F 3 "" H 2500 5400 50  0001 C CNN
+	1    2500 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0106
+U 1 1 6194EEB7
+P 2850 4550
+F 0 "#PWR0106" H 2850 4300 50  0001 C CNN
+F 1 "GND" H 2855 4377 50  0000 C CNN
+F 2 "" H 2850 4550 50  0001 C CNN
+F 3 "" H 2850 4550 50  0001 C CNN
+	1    2850 4550
+	0    1    1    0   
+$EndComp
+Text Label 2800 4650 3    50   ~ 0
+P2
+Text Label 2800 4750 3    50   ~ 0
+P1
+$Comp
+L Device:D D13
+U 1 1 619632A5
+P 6150 2700
+F 0 "D13" V 6104 2780 50  0000 L CNN
+F 1 "D" V 6195 2780 50  0000 L CNN
+F 2 "Diode_THT:D_DO-15_P12.70mm_Horizontal" H 6150 2700 50  0001 C CNN
+F 3 "https://ro.farnell.com/taiwan-semiconductor/1n5391g-r0g/rectifier-single-50v-1-5a-do-204ac/dp/3519207" H 6150 2700 50  0001 C CNN
+	1    6150 2700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3000 4650 2800 4650
+Wire Wire Line
+	2800 4750 3000 4750
+Wire Wire Line
+	2850 4550 3000 4550
+$Comp
+L Connector:Conn_01x03_Female J2
+U 1 1 6199D8F3
+P 3200 5300
+F 0 "J2" H 3228 5326 50  0000 L CNN
+F 1 "Conn_01x03_Female" H 3228 5235 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 3200 5300 50  0001 C CNN
+F 3 "~" H 3200 5300 50  0001 C CNN
+	1    3200 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR01
+U 1 1 619A7AB1
+P 2850 5200
+F 0 "#PWR01" H 2850 4950 50  0001 C CNN
+F 1 "GND" H 2855 5027 50  0000 C CNN
+F 2 "" H 2850 5200 50  0001 C CNN
+F 3 "" H 2850 5200 50  0001 C CNN
+	1    2850 5200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2850 5200 2900 5200
+$Comp
+L Connector:Conn_01x04_Female J1
+U 1 1 619ADA7F
+P 3200 4650
+F 0 "J1" H 3228 4626 50  0000 L CNN
+F 1 "Conn_01x04_Female" H 3228 4535 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 3200 4650 50  0001 C CNN
+F 3 "~" H 3200 4650 50  0001 C CNN
+	1    3200 4650
+	1    0    0    -1  
+$EndComp
+NoConn ~ 3000 4850
+NoConn ~ 3000 5300
+$Comp
+L power:GND #PWR02
+U 1 1 61985E8A
+P 5850 3900
+F 0 "#PWR02" H 5850 3650 50  0001 C CNN
+F 1 "GND" H 5855 3727 50  0000 C CNN
+F 2 "" H 5850 3900 50  0001 C CNN
+F 3 "" H 5850 3900 50  0001 C CNN
+	1    5850 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5850 3750 5850 3900
+Wire Wire Line
+	5850 3750 6600 3750
+Wire Wire Line
+	6400 2850 6400 3350
+Wire Wire Line
+	6400 3350 6600 3350
+Connection ~ 6400 2850
+Wire Wire Line
+	6400 3350 5850 3350
+Connection ~ 6400 3350
+Wire Wire Line
+	4000 3250 4000 3100
+Wire Wire Line
+	4000 3100 5550 3100
+Wire Wire Line
+	5550 3100 5550 3550
+Wire Wire Line
+	6300 3550 6300 4250
+Wire Wire Line
+	6300 4250 1900 4250
+Wire Wire Line
+	1900 4250 1900 3250
+Connection ~ 1900 3250
+Wire Wire Line
+	1900 3250 2050 3250
+$Comp
+L Connector:Conn_01x02_Female buzzer1
+U 1 1 6198F8BC
+P 6700 2650
+F 0 "buzzer1" H 6728 2626 50  0000 L CNN
+F 1 "Conn_01x02_Female" H 6728 2535 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 6700 2650 50  0001 C CNN
+F 3 "~" H 6700 2650 50  0001 C CNN
+	1    6700 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6400 2600 6500 2600
+Wire Wire Line
+	6500 2600 6500 2650
+Wire Wire Line
+	6500 2750 6400 2750
+Wire Wire Line
+	6400 2750 6400 2850
+Wire Wire Line
+	6400 2350 6400 2550
+$Comp
+L Device:C_Small C3
+U 1 1 619B2B9C
+P 2900 5300
+F 0 "C3" H 2992 5346 50  0000 L CNN
+F 1 "C_Small 47" H 2992 5255 50  0000 L CNN
+F 2 "Capacitor_THT:C_Rect_L9.0mm_W3.2mm_P7.50mm_MKT" H 2900 5300 50  0001 C CNN
+F 3 "~" H 2900 5300 50  0001 C CNN
+	1    2900 5300
+	1    0    0    -1  
+$EndComp
+Connection ~ 2900 5200
+Wire Wire Line
+	2900 5200 3000 5200
+Connection ~ 2900 5400
+Wire Wire Line
+	2900 5400 3000 5400
+$Comp
+L Mechanical:MountingHole_Pad H1
+U 1 1 619B5C59
+P 3850 5700
+F 0 "H1" V 3804 5850 50  0000 L CNN
+F 1 "MountingHole_Pad" V 3895 5850 50  0000 L CNN
+F 2 "MountingHole:MountingHole_4.3mm_M4" H 3850 5700 50  0001 C CNN
+F 3 "~" H 3850 5700 50  0001 C CNN
+	1    3850 5700
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR07
+U 1 1 619B6490
+P 3650 5700
+F 0 "#PWR07" H 3650 5450 50  0001 C CNN
+F 1 "GND" H 3655 5527 50  0000 C CNN
+F 2 "" H 3650 5700 50  0001 C CNN
+F 3 "" H 3650 5700 50  0001 C CNN
+	1    3650 5700
+	0    1    1    0   
+$EndComp
+$Comp
+L Converter_DCDC:TC7662AxPA U1
+U 1 1 619B8341
+P 9150 2100
+F 0 "U1" H 10500 2050 50  0000 C CNN
+F 1 "TC7662AxPA" H 10500 2200 50  0000 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm" H 9250 2000 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21468B.pdf" H 9250 2000 50  0001 C CNN
+	1    9150 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H2
+U 1 1 619B90DE
+P 3850 5900
+F 0 "H2" V 3804 6050 50  0000 L CNN
+F 1 "MountingHole_Pad" V 3895 6050 50  0000 L CNN
+F 2 "MountingHole:MountingHole_4.3mm_M4" H 3850 5900 50  0001 C CNN
+F 3 "~" H 3850 5900 50  0001 C CNN
+	1    3850 5900
+	0    1    1    0   
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H3
+U 1 1 619B9299
+P 3850 6100
+F 0 "H3" V 3804 6250 50  0000 L CNN
+F 1 "MountingHole_Pad" V 3895 6250 50  0000 L CNN
+F 2 "MountingHole:MountingHole_4.3mm_M4" H 3850 6100 50  0001 C CNN
+F 3 "~" H 3850 6100 50  0001 C CNN
+	1    3850 6100
+	0    1    1    0   
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H4
+U 1 1 619B95A6
+P 3850 6300
+F 0 "H4" V 3804 6450 50  0000 L CNN
+F 1 "MountingHole_Pad" V 3895 6450 50  0000 L CNN
+F 2 "MountingHole:MountingHole_4.3mm_M4" H 3850 6300 50  0001 C CNN
+F 3 "~" H 3850 6300 50  0001 C CNN
+	1    3850 6300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3650 5700 3750 5700
+Wire Wire Line
+	3750 5700 3750 5900
+Connection ~ 3750 5700
+Connection ~ 3750 5900
+Wire Wire Line
+	3750 5900 3750 6100
+Connection ~ 3750 6100
+Wire Wire Line
+	3750 6100 3750 6300
+$Comp
+L power:+10V #PWR06
+U 1 1 619BB2D4
+P 6400 2350
+F 0 "#PWR06" H 6400 2200 50  0001 C CNN
+F 1 "+10V" H 6415 2523 50  0000 C CNN
+F 2 "" H 6400 2350 50  0001 C CNN
+F 3 "" H 6400 2350 50  0001 C CNN
+	1    6400 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+10V #PWR04
+U 1 1 619BC328
+P 9150 1350
+F 0 "#PWR04" H 9150 1200 50  0001 C CNN
+F 1 "+10V" H 9165 1523 50  0000 C CNN
+F 2 "" H 9150 1350 50  0001 C CNN
+F 3 "" H 9150 1350 50  0001 C CNN
+	1    9150 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR03
+U 1 1 619BCF2F
+P 8250 1350
+F 0 "#PWR03" H 8250 1200 50  0001 C CNN
+F 1 "+5V" H 8265 1523 50  0000 C CNN
+F 2 "" H 8250 1350 50  0001 C CNN
+F 3 "" H 8250 1350 50  0001 C CNN
+	1    8250 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D14
+U 1 1 619BD5BC
+P 8550 1450
+F 0 "D14" V 8504 1530 50  0000 L CNN
+F 1 "D" V 8595 1530 50  0000 L CNN
+F 2 "Diode_THT:D_DO-15_P12.70mm_Horizontal" H 8550 1450 50  0001 C CNN
+F 3 "https://ro.farnell.com/taiwan-semiconductor/1n5391g-r0g/rectifier-single-50v-1-5a-do-204ac/dp/3519207" H 8550 1450 50  0001 C CNN
+	1    8550 1450
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR05
+U 1 1 619BD91F
+P 9550 1450
+F 0 "#PWR05" H 9550 1200 50  0001 C CNN
+F 1 "GND" H 9555 1277 50  0000 C CNN
+F 2 "" H 9550 1450 50  0001 C CNN
+F 3 "" H 9550 1450 50  0001 C CNN
+	1    9550 1450
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R8
+U 1 1 619BEB6E
+P 8250 2350
+F 0 "R8" H 8309 2396 50  0000 L CNN
+F 1 "R chg 100" H 8309 2305 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0414_L11.9mm_D4.5mm_P20.32mm_Horizontal" H 8250 2350 50  0001 C CNN
+F 3 "" H 8250 2350 50  0001 C CNN
+	1    8250 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8700 1450 9150 1450
+Wire Wire Line
+	9150 1450 9150 1600
+Wire Wire Line
+	9150 1350 9150 1450
+Connection ~ 9150 1450
+Wire Wire Line
+	8400 1450 8250 1450
+Wire Wire Line
+	8250 1450 8250 1350
+Wire Wire Line
+	8250 1450 8250 2250
+Connection ~ 8250 1450
+Wire Wire Line
+	8250 2450 8250 2600
+Wire Wire Line
+	8250 2600 9150 2600
+$Comp
+L Device:C_Small C1
+U 1 1 619C9E67
+P 9350 1450
+F 0 "C1" H 9442 1496 50  0000 L CNN
+F 1 "C_Small 47" H 9442 1405 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D8.0mm_W5.0mm_P5.00mm" H 9350 1450 50  0001 C CNN
+F 3 "~" H 9350 1450 50  0001 C CNN
+	1    9350 1450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C_Small C2
+U 1 1 619CAFE3
+P 9700 2200
+F 0 "C2" H 9792 2246 50  0000 L CNN
+F 1 "C_Small 47" H 9792 2155 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D8.0mm_W5.0mm_P5.00mm" H 9700 2200 50  0001 C CNN
+F 3 "~" H 9700 2200 50  0001 C CNN
+	1    9700 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9550 2000 9700 2000
+Wire Wire Line
+	9700 2000 9700 2100
+Wire Wire Line
+	9700 2300 9700 2400
+Wire Wire Line
+	9700 2400 9550 2400
+Wire Wire Line
+	9150 1450 9250 1450
+Wire Wire Line
+	9450 1450 9550 1450
+Wire Wire Line
+	9550 1450 9550 1650
+Connection ~ 9550 1450
+NoConn ~ 8750 2100
+$Comp
+L Device:R_Small R1
+U 1 1 619D6D5C
+P 9800 1650
+F 0 "R1" H 9859 1696 50  0000 L CNN
+F 1 "R chg 1M" H 9859 1605 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 9800 1650 50  0001 C CNN
+F 3 "https://ro.farnell.com/multicomp/mcf-0-25w-3r9/res-3r9-5-250mw-axial-carbon-film/dp/9339515" H 9800 1650 50  0001 C CNN
+	1    9800 1650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9700 1650 9550 1650
+Connection ~ 9550 1650
+Wire Wire Line
+	9550 1650 9550 1800
+Wire Wire Line
+	8750 2300 8750 2850
+Wire Wire Line
+	8750 2850 10100 2850
+Wire Wire Line
+	10100 2850 10100 1650
+Wire Wire Line
+	10100 1650 9900 1650
+$Comp
+L Device:Q_NMOS_SGD Q3
+U 1 1 61A5E0A6
+P 5750 3550
+F 0 "Q3" H 5954 3596 50  0000 L CNN
+F 1 "Q_NMOS_SGD" H 5954 3505 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92" H 5950 3650 50  0001 C CNN
+F 3 "~" H 5750 3550 50  0001 C CNN
+	1    5750 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_NMOS_SGD Q1
+U 1 1 61A5EC34
+P 2400 3250
+F 0 "Q1" H 2604 3296 50  0000 L CNN
+F 1 "Q_NMOS_SGD" H 2604 3205 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92" H 2600 3350 50  0001 C CNN
+F 3 "~" H 2400 3250 50  0001 C CNN
+	1    2400 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_NMOS_SGD Q2
+U 1 1 61A5F206
+P 4350 3250
+F 0 "Q2" H 4554 3296 50  0000 L CNN
+F 1 "Q_NMOS_SGD" H 4554 3205 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92" H 4550 3350 50  0001 C CNN
+F 3 "~" H 4350 3250 50  0001 C CNN
+	1    4350 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_NMOS_SGD Q4
+U 1 1 61A5F6F1
+P 6500 3550
+F 0 "Q4" H 6704 3596 50  0000 L CNN
+F 1 "Q_NMOS_SGD" H 6704 3505 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92" H 6700 3650 50  0001 C CNN
+F 3 "~" H 6500 3550 50  0001 C CNN
+	1    6500 3550
+	1    0    0    -1  
+$EndComp
+Connection ~ 5850 3750
+Wire Wire Line
+	2500 5400 2900 5400
+$EndSCHEMATC
