@@ -1,0 +1,29 @@
+6209015360956
+RF_Antenna
+Coilcraft_MA5532-AE_RFID
+RFID Transponder Coil
+antenna rfid coilcraft
+0
+2
+2
+RF_Antenna
+Pulse_W3011
+Pulse RF Antenna, 4mm Clearance
+antenna rf
+0
+3
+2
+RF_Antenna
+Texas_SWRA117D_2.4GHz_Left
+http://www.ti.com/lit/an/swra117d/swra117d.pdf
+PCB antenna
+0
+2
+2
+RF_Antenna
+Texas_SWRA117D_2.4GHz_Right
+http://www.ti.com/lit/an/swra117d/swra117d.pdf
+PCB antenna
+0
+2
+2
