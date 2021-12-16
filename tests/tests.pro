@@ -1,4 +1,4 @@
-update=23-Nov-21 13:01:12
+update=06-Dec-21 18:12:04
 version=1
 last_client=kicad
 [general]
@@ -15,7 +15,7 @@ LibDir=
 [pcbnew]
 version=1
 PageLayoutDescrFile=
-LastNetListRead=25-station-led-alarm.net
+LastNetListRead=tests.net
 CopperLayerCount=2
 BoardThickness=1.6
 AllowMicroVias=0
@@ -29,11 +29,8 @@ MinMicroViaDiameter=0.2
 MinMicroViaDrill=0.09999999999999999
 MinHoleToHole=0.25
 TrackWidth1=0.25
-TrackWidth2=1
 ViaDiameter1=0.8
 ViaDrill1=0.4
-ViaDiameter2=0.9
-ViaDrill2=0.8
 dPairWidth1=0.2
 dPairGap1=0.25
 dPairViaGap1=0.25
@@ -57,17 +54,7 @@ OthersTextSizeH=1
 OthersTextSizeThickness=0.15
 OthersTextItalic=0
 OthersTextUpright=1
-SolderMaskClearance=0
-SolderMaskMinWidth=0
+SolderMaskClearance=0.051
+SolderMaskMinWidth=0.25
 SolderPasteClearance=0
-SolderPasteRatio=-0
-[schematic_editor]
-version=1
-PageLayoutDescrFile=
-PlotDirectoryName=
-SubpartIdSeparator=0
-SubpartFirstId=65
-NetFmtName=Pcbnew
-SpiceAjustPassiveValues=0
-LabSize=50
-ERC_TestSimilarLabels=1
+SolderPasteRatio=0
