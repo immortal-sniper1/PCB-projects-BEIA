@@ -94,4 +94,15 @@ F 3 "~" H 2850 2400 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2850 2600 2450 2600
+$Comp
+L Connector:Raspberry_Pi_2_3 J1
+U 1 1 61C02F7D
+P 8350 2700
+F 0 "J1" H 8350 4181 50  0000 C CNN
+F 1 "Raspberry_Pi_2_3" H 8350 4090 50  0000 C CNN
+F 2 "" H 8350 2700 50  0001 C CNN
+F 3 "https://www.raspberrypi.org/documentation/hardware/raspberrypi/schematics/rpi_SCH_3bplus_1p0_reduced.pdf" H 8350 2700 50  0001 C CNN
+	1    8350 2700
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

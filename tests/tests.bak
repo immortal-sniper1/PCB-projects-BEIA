@@ -87,11 +87,22 @@ U 1 1 61B405A8
 P 2850 2400
 F 0 "AE1" H 2930 2389 50  0000 L CNN
 F 1 "Antenna" H 2930 2298 50  0000 L CNN
-F 2 "" H 2850 2400 50  0001 C CNN
+F 2 "RF_Antenna:Texas_SWRA117D_2.4GHz_Left" H 2850 2400 50  0001 C CNN
 F 3 "~" H 2850 2400 50  0001 C CNN
 	1    2850 2400
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	2850 2600 2450 2600
+$Comp
+L Connector:Raspberry_Pi_2_3 J?
+U 1 1 61C02F7D
+P 8350 2700
+F 0 "J?" H 8350 4181 50  0000 C CNN
+F 1 "Raspberry_Pi_2_3" H 8350 4090 50  0000 C CNN
+F 2 "" H 8350 2700 50  0001 C CNN
+F 3 "https://www.raspberrypi.org/documentation/hardware/raspberrypi/schematics/rpi_SCH_3bplus_1p0_reduced.pdf" H 8350 2700 50  0001 C CNN
+	1    8350 2700
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
