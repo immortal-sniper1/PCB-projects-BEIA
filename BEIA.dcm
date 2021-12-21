@@ -1,3 +1,7 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP MQ135
+D MQ135 the same symbol works for MQ136 MQ137
+$ENDCMP
+#
 #End Doc Library

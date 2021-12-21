@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name raspberrypi_hat)(type Legacy)(uri ${KIPRJMOD}/project_components/raspberrypi_hat.lib)(options "")(descr ""))
+  (lib (name RPI_HAT_sensors-rescue)(type Legacy)(uri ${KIPRJMOD}/RPI_HAT_sensors-rescue.lib)(options "")(descr ""))
+  (lib (name BEIA)(type Legacy)(uri D:/github-stuff/PCB-projects/BEIA.lib)(options "")(descr ""))
+)

@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name project_footprints)(type KiCad)(uri "$(KIPRJMOD)/project_footprints.pretty")(options "")(descr ""))
+  (lib (name BEIA_sensors)(type KiCad)(uri D:/github-stuff/PCB-projects/BEIA_sensors.pretty)(options "")(descr ""))
+)
