@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source D:\github-stuff\PCB-projects\RPI_HAT_sensors\RPI_HAT_sensors.sch)
-    (date "23-Dec-21 08:22:08")
+    (date "23-Dec-21 09:13:10")
     (tool "Eeschema (5.1.0)-1")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -174,7 +174,28 @@
       (datasheet ~)
       (libsource (lib Device) (part R_Small) (description "Resistor, small symbol"))
       (sheetpath (names /) (tstamps /))
-      (tstamp 61C65D42)))
+      (tstamp 61C65D42))
+    (comp (ref FID3)
+      (value Fiducial)
+      (footprint Fiducial:Fiducial_1.5mm_Mask3mm)
+      (datasheet ~)
+      (libsource (lib Mechanical) (part Fiducial) (description "Fiducial Marker"))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 61C8CBCA))
+    (comp (ref FID2)
+      (value Fiducial)
+      (footprint Fiducial:Fiducial_1.5mm_Mask3mm)
+      (datasheet ~)
+      (libsource (lib Mechanical) (part Fiducial) (description "Fiducial Marker"))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 61C8D70B))
+    (comp (ref FID1)
+      (value Fiducial)
+      (footprint Fiducial:Fiducial_1.5mm_Mask3mm)
+      (datasheet ~)
+      (libsource (lib Mechanical) (part Fiducial) (description "Fiducial Marker"))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 61C8DD5E)))
   (libparts
     (libpart (lib Analog_ADC) (part MCP3208)
       (aliases
@@ -271,6 +292,14 @@
       (pins
         (pin (num 1) (name ~) (type passive))
         (pin (num 2) (name ~) (type passive))))
+    (libpart (lib Mechanical) (part Fiducial)
+      (description "Fiducial Marker")
+      (docs ~)
+      (footprints
+        (fp Fiducial*))
+      (fields
+        (field (name Reference) FID)
+        (field (name Value) Fiducial)))
     (libpart (lib RPI_HAT_sensors-rescue) (part Mounting_Hole-Mechanical)
       (footprints
         (fp Mounting?Hole*)
@@ -349,6 +378,8 @@
       (uri "E:\\Program Files\\KiCad\\share\\kicad\\library/Connector.lib"))
     (library (logical Device)
       (uri "E:\\Program Files\\KiCad\\share\\kicad\\library/Device.lib"))
+    (library (logical Mechanical)
+      (uri "E:\\Program Files\\KiCad\\share\\kicad\\library/Mechanical.lib"))
     (library (logical RPI_HAT_sensors-rescue)
       (uri D:\github-stuff\PCB-projects\RPI_HAT_sensors/RPI_HAT_sensors-rescue.lib))
     (library (logical Sensor)
