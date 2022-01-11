@@ -1,0 +1,46 @@
+Source,D:\github-stuff\PCB-projects\RPI_HAT_sensors\RPI_HAT_sensors.sch
+Kicad Rev,Eeschema (5.1.0)-1
+Generated Date,03-Jan-22 10:02:35
+
+Title,Raspberry Pi HAT for MG135 136 137
+Company,BEIA
+Revision,1
+Date Issue,Not Set
+
+Reference,Value,Library,Library Ref
+H1,3mm_Mounting_Hole,RPI_HAT_sensors-rescue,Mounting_Hole-Mechanical
+H2,3mm_Mounting_Hole,RPI_HAT_sensors-rescue,Mounting_Hole-Mechanical
+H3,3mm_Mounting_Hole,RPI_HAT_sensors-rescue,Mounting_Hole-Mechanical
+H4,3mm_Mounting_Hole,RPI_HAT_sensors-rescue,Mounting_Hole-Mechanical
+J3,40HAT,RPI_HAT_sensors-rescue,OX40HAT-raspberrypi_hat
+U4,MCP3208,Analog_ADC,MCP3208
+RV3,R_POT,Device,R_POT
+RV2,R_POT,Device,R_POT
+RV1,R_POT,Device,R_POT
+U3,MQ136,BEIA,MQ135
+U2,MQ137,BEIA,MQ135
+U1,MQ135,BEIA,MQ135
+J1,MOTOR,Connector,Conn_01x02_Male
+Q1,Q_NMOS_SGD,Device,Q_NMOS_SGD
+C2,1u,Device,C_Small
+U5,DHT11,Sensor,DHT11
+R2,10k,Device,R_Small
+R1,220+,Device,R_Small
+R3,5.1k,Device,R_Small
+C1,10u,Device,C_Small
+J2,MOTOR,Connector,Conn_01x02_Male
+Q2,Q_NMOS_SGD,Device,Q_NMOS_SGD
+R5,10k,Device,R_Small
+R4,220+,Device,R_Small
+FID3,Fiducial,Mechanical,Fiducial
+FID2,Fiducial,Mechanical,Fiducial
+FID1,Fiducial,Mechanical,Fiducial
+U6,CAT24C32-raspberrypi_hat,RPI_HAT_sensors-rescue,CAT24C32-raspberrypi_hat
+R6,3K9,Device,R_Small
+JP1,Jumper_2_Open,Jumper,Jumper_2_Open
+R7,3K9,Device,R_Small
+R8,3K9,Device,R_Small
+C3,1u,Device,C_Small
+C6,1u,Device,C_Small
+C5,1u,Device,C_Small
+C4,1u,Device,C_Small

@@ -1,0 +1,28 @@
+header
+
+0x52, 0x2D, 0x50, 0x69   ("R-Pi" in ASCII)
+0x01       ver 1 pt noi
+0x00        nu te atinge de el
+0x00 0x03    nr atomi , aparent mininm 3 
+0x52, 0x2D, 0x50, 0x69     nr total de biti din tot eprom , include header
+
+
+  ATOM1   <- Vendor info atom (Required)
+  0x0001
+  0x0001    atom count in 2 bytes
+  0x0000, 0x0000, 0x0000, 0x0000    16 bytes UUID  e o seriala pt fiacare placa este ca un cod unic 
+  0x0001    product ID
+  0x0001    versiune produs 1 pt noi
+  0x10     vslen       vendor string length (bytes)
+  0x12     pslen       product string length (bytes)
+  66 69 73 65 32 67 79 78 83 85 76 84 32 83 82 76   ASCII vendor string    BEIA CONSULT SRL
+  84 79 73 76 69 84 52 77 69 50 32 83 69 78 83 79 82 83     ASCII product string  TOILET4ME2 SENSORS
+  
+    ATOM2   <- GPIO map atom (Required)
+    
+    
+    NU MIAM DAT SEAMA INCA
+    
+    
+    
+  ATOM3   <- DT blob atom (Required for compliance with the HAT specification)
