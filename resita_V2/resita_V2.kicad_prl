@@ -1,6 +1,6 @@
 {
   "board": {
-    "active_layer": 1,
+    "active_layer": 0,
     "active_layer_preset": "",
     "auto_track_width": true,
     "hidden_nets": [],
@@ -33,9 +33,11 @@
       3,
       4,
       5,
+      8,
       9,
       10,
       11,
+      12,
       13,
       14,
       15,
@@ -60,11 +62,11 @@
       35,
       36
     ],
-    "visible_layers": "001f3ff_00000002",
+    "visible_layers": "fffffff_ffffffff",
     "zone_display_mode": 0
   },
   "meta": {
-    "filename": "RPI_HAT_sensors.kicad_prl",
+    "filename": "resita_V2.kicad_prl",
     "version": 3
   },
   "project": {
