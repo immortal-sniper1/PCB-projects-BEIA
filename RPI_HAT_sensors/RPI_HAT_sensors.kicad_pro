@@ -390,7 +390,7 @@
       "netlist": "RPI_HAT_sensors.net",
       "specctra_dsn": "",
       "step": "",
-      "vrml": ""
+      "vrml": "../../../../Desktop/RPI_HAT_sensors.wrl"
     },
     "page_layout_descr_file": ""
   },
