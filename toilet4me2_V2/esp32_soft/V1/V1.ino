@@ -20,3 +20,5 @@ void setup() {
 void loop() {
   // put your main code here, to run repeatedly:
 }
+
+// dac lib    https://github.com/e-radionicacom/Soldered-DAC-Breakout_MCP47A1-Arduino-Library
