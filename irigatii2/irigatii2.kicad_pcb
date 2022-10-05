@@ -300,7 +300,7 @@
 
   (footprint "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Vertical" (layer "F.Cu")
     (tedit 5AE5139B) (tstamp 0a96644c-0b57-434b-9a9b-5c43dfb17404)
-    (at 36.449 111.8108)
+    (at 36.4474 111.8108)
     (descr "Resistor, Axial_DIN0204 series, Axial, Vertical, pin pitch=5.08mm, 0.167W, length*diameter=3.6*1.6mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf")
     (tags "Resistor Axial_DIN0204 series Axial Vertical pin pitch 5.08mm 0.167W length 3.6mm diameter 1.6mm")
     (property "Sheetfile" "irigatii2.kicad_sch")
@@ -2628,7 +2628,7 @@
 
   (footprint "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Vertical" (layer "F.Cu")
     (tedit 5AE5139B) (tstamp 51cc921d-818c-459a-9544-3fa44a6bbf9e)
-    (at 41.4528 114.1222 180)
+    (at 41.4274 114.1222 180)
     (descr "Resistor, Axial_DIN0204 series, Axial, Vertical, pin pitch=5.08mm, 0.167W, length*diameter=3.6*1.6mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf")
     (tags "Resistor Axial_DIN0204 series Axial Vertical pin pitch 5.08mm 0.167W length 3.6mm diameter 1.6mm")
     (property "Sheetfile" "irigatii2.kicad_sch")
@@ -4518,7 +4518,7 @@
 
   (footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" (layer "F.Cu")
     (tedit 5AE5139B) (tstamp 81f3e58d-0959-4ef4-971e-03339b82307c)
-    (at 55.3974 127.4572 -90)
+    (at 55.3974 127.4826 -90)
     (descr "Resistor, Axial_DIN0207 series, Axial, Horizontal, pin pitch=10.16mm, 0.25W = 1/4W, length*diameter=6.3*2.5mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf")
     (tags "Resistor Axial_DIN0207 series Axial Horizontal pin pitch 10.16mm 0.25W = 1/4W length 6.3mm diameter 2.5mm")
     (property "Sheetfile" "irigatii2.kicad_sch")
@@ -8911,7 +8911,7 @@
 
   (footprint "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Vertical" (layer "F.Cu")
     (tedit 5AE5139B) (tstamp efd8a4ac-531e-4576-b9ac-900008c9f2e2)
-    (at 36.3728 116.6114)
+    (at 36.4474 116.6114)
     (descr "Resistor, Axial_DIN0204 series, Axial, Vertical, pin pitch=5.08mm, 0.167W, length*diameter=3.6*1.6mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf")
     (tags "Resistor Axial_DIN0204 series Axial Vertical pin pitch 5.08mm 0.167W length 3.6mm diameter 1.6mm")
     (property "Sheetfile" "irigatii2.kicad_sch")
